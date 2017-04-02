@@ -2,7 +2,7 @@
 <ModelSettings xmlns:Serlio="http://www.serliosoft.com/modelsettings">
   <PackageId>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</PackageId>
   <ShowDescendants>true</ShowDescendants>
-  <ProjectOpenedTabName>pgDictionary2</ProjectOpenedTabName>
+  <ProjectOpenedTabName>pgRequirements</ProjectOpenedTabName>
   <Sorting>
     <UseCaseViewSortColumns>
       <string>Name</string>
@@ -87,7 +87,7 @@
   </IssueList>
   <DictionaryList>
     <Columns>Name,UserID,Description,Parent</Columns>
-    <ColumnWidths>201,60,320,125</ColumnWidths>
+    <ColumnWidths>130,60,320,125</ColumnWidths>
   </DictionaryList>
   <FilteredLists />
   <OpenFilters />

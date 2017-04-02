@@ -2,7 +2,7 @@
 <UCTDataSet xmlns="http://serliosoft.com/UCTData.xsd">
   <VersionInfo>
     <Version>5.0</Version>
-    <SavedWith>12.0.6296</SavedWith>
+    <SavedWith>12.0.6283</SavedWith>
     <CreatedWith>12.0.6296</CreatedWith>
   </VersionInfo>
   <Project>
@@ -169,6 +169,204 @@
     <DateModified>2017-04-02T13:06:49.2985191-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
+  <Requirement>
+    <UniqueID>REQ-b1a238e8-a4b4-40e6-b63c-4681ebab7a3b</UniqueID>
+    <UserID>REQ-8</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Sugerir Livros</Name>
+    <Description>O sistema deve permitir ao usuário sugerir o cadastro de livros como mídias, contendo código, título, gênero, participantes, idioma, ISBN, nota média e palavras-chaves.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio sugerir o cadastro de livros como m\'eddias, contendo c\'f3digo, t\'edtulo, g\'eanero, participantes, idioma, ISBN, nota m\'e9dia e palavras-chaves.\par
+}
+</RichDescription>
+    <Sequence>7</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T14:09:20.2706466-03:00</DateAdded>
+    <DateModified>2017-04-02T14:10:29.8636271-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-8bfc84ec-925e-4402-a60a-9aef4f5b8040</UniqueID>
+    <UserID>REQ-9</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Sugerir Episódios</Name>
+    <Description>O sistema deve permitir ao usuário sugerir o cadastro de episódios como mídias, contendo título, duração, sinopse, participantes, data de exibição, nota média e palavras-chaves.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio sugerir o cadastro de epis\'f3dios como m\'eddias, contendo t\'edtulo, dura\'e7\'e3o, sinopse, participantes, data de exibi\'e7\'e3o, nota m\'e9dia e palavras-chaves.\par
+}
+</RichDescription>
+    <Sequence>8</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T14:10:36.8880289-03:00</DateAdded>
+    <DateModified>2017-04-02T14:10:58.7052768-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-d4e59b3c-bcd0-4922-8e6b-c4352cf9bd4c</UniqueID>
+    <UserID>REQ-10</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Sugerir Filmes</Name>
+    <Description>O sistema deve permitir ao usuário sugerir o cadastro de filmes como mídias, contendo nome, duração, sinopse, participantes, ano de lançamento, gêneros, nota média e palavras-chaves.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio sugerir o cadastro de filmes como m\'eddias, contendo nome, dura\'e7\'e3o, sinopse, participantes, ano de lan\'e7amento, g\'eaneros, nota m\'e9dia e palavras-chaves.\par
+}
+</RichDescription>
+    <Sequence>9</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T14:11:17.1043291-03:00</DateAdded>
+    <DateModified>2017-04-02T14:12:55.4219526-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-ad6265b1-56b7-4eff-8b3e-b44662c22aef</UniqueID>
+    <UserID>REQ-11</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Sugerir Coleções</Name>
+    <Description>O sistema deve permitir ao  usuário sugerir cadastro de coleções de mídias, contendo nome, mídias integrantes, nota média com base nas mídias integrantes, descrição e palavras-chave. </Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao  usu\'e1rio sugerir cadastro de cole\'e7\'f5es de m\'eddias, contendo nome, m\'eddias integrantes, nota m\'e9dia com base nas m\'eddias integrantes, descri\'e7\'e3o e palavras-chave. \par
+}
+</RichDescription>
+    <Sequence>10</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T14:11:42.7437956-03:00</DateAdded>
+    <DateModified>2017-04-02T14:13:00.6302505-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-1278f0d1-7444-40ee-9122-8cc340f9f543</UniqueID>
+    <UserID>REQ-12</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Avaliar Sugestões</Name>
+    <Description>O sistema deve permitir ao administrador ter acesso a todas sugestões de cadastro em uma página, para que possa aprovar e reprovar cada uma conforme o caso. O retorno da sugestão deve ser dado ao usuário através de um e-mail.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao administrador ter acesso a todas sugest\'f5es de cadastro em uma p\'e1gina, para que possa aprovar e reprovar cada uma conforme o caso. O retorno da sugest\'e3o deve ser dado ao usu\'e1rio atrav\'e9s de um e-mail.\par
+}
+</RichDescription>
+    <Sequence>11</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T14:11:44.5268976-03:00</DateAdded>
+    <DateModified>2017-04-02T14:13:07.0616183-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-51ac88c0-d97f-4976-ac90-681677b366a5</UniqueID>
+    <UserID>REQ-13</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Avaliar Mídia</Name>
+    <Description>O sistema deve permitir ao usuário marcar uma determinada mídia como consumida, contendo código da marcação, data, horário (do momento da postagem) e, opcionalmente, nota dada à determinada mídia.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio marcar uma determinada m\'eddia como consumida, contendo c\'f3digo da marca\'e7\'e3o, data, hor\'e1rio (do momento da postagem) e, opcionalmente, nota dada \'e0 determinada m\'eddia.\par
+}
+</RichDescription>
+    <Sequence>12</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T14:11:45.7429672-03:00</DateAdded>
+    <DateModified>2017-04-02T14:14:01.8897543-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-f3ff64dc-3536-4082-9046-90169c20c1a4</UniqueID>
+    <UserID>REQ-14</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Uso de Cookies</Name>
+    <Description>O sistema deve fazer uso de ‘cookies’ para aprimorar e facilitar o uso dos mecanismo de buscas.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve fazer uso de \lquote cookies\rquote  para aprimorar e facilitar o uso dos mecanismo de buscas.\par
+}
+</RichDescription>
+    <Sequence>13</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T14:11:50.9032623-03:00</DateAdded>
+    <DateModified>2017-04-02T14:16:46.3091586-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-d0dc8b09-79bd-46d3-86ed-3702a5929faf</UniqueID>
+    <UserID>REQ-15</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Armazenamento de Dados</Name>
+    <Description>O sistema usará de um banco de dados para armazenamento das contas cadastradas e mídias sugeridas pelos usuários.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema usar\'e1 de um banco de dados para armazenamento das contas cadastradas e m\'eddias sugeridas pelos usu\'e1rios.\par
+}
+</RichDescription>
+    <Sequence>14</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T14:11:52.1513337-03:00</DateAdded>
+    <DateModified>2017-04-02T14:17:07.2633571-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-8eadaa60-92f7-4e91-82ed-98f6c1400ae5</UniqueID>
+    <UserID>REQ-16</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Disponibilidade do Sistema</Name>
+    <Description>O sistema deverá estar disponível para acesso a qualquer momento, tendo como exceção apenas situações de manutenção de erros graves.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema dever\'e1 estar dispon\'edvel para acesso a qualquer momento, tendo como exce\'e7\'e3o apenas situa\'e7\'f5es de manuten\'e7\'e3o de erros graves.\par
+}
+</RichDescription>
+    <Sequence>15</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T14:11:53.5994165-03:00</DateAdded>
+    <DateModified>2017-04-02T14:17:40.1692392-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
   <UserID>
     <DefaultPrefix>UC-</DefaultPrefix>
     <NextValue>1</NextValue>
@@ -179,7 +377,7 @@
   </UserID>
   <UserID>
     <DefaultPrefix>REQ-</DefaultPrefix>
-    <NextValue>8</NextValue>
+    <NextValue>17</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>DEF-</DefaultPrefix>
