@@ -2,7 +2,7 @@
 <UCTDataSet xmlns="http://serliosoft.com/UCTData.xsd">
   <VersionInfo>
     <Version>5.0</Version>
-    <SavedWith>12.0.6296</SavedWith>
+    <SavedWith>12.0.6283</SavedWith>
     <CreatedWith>12.0.6296</CreatedWith>
   </VersionInfo>
   <Project>
@@ -50,13 +50,13 @@
 </RichDescription>
     <Sequence>1</Sequence>
     <Type>Functional</Type>
-    <Priority>3</Priority>
+    <Priority>2</Priority>
     <Source />
     <Status>Proposed</Status>
     <AssignedTo />
     <Release />
     <DateAdded>2017-04-02T12:57:36.488029-03:00</DateAdded>
-    <DateModified>2017-04-02T13:08:44.2297966-03:00</DateModified>
+    <DateModified>2017-04-02T19:58:46.0798734-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
@@ -72,13 +72,13 @@
 </RichDescription>
     <Sequence>2</Sequence>
     <Type>Functional</Type>
-    <Priority>1</Priority>
+    <Priority>3</Priority>
     <Source />
     <Status>Proposed</Status>
     <AssignedTo />
     <Release />
     <DateAdded>2017-04-02T13:00:07.2801814-03:00</DateAdded>
-    <DateModified>2017-04-02T13:00:27.2733669-03:00</DateModified>
+    <DateModified>2017-04-02T19:58:51.8265144-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
@@ -160,13 +160,13 @@
 </RichDescription>
     <Sequence>6</Sequence>
     <Type>Functional</Type>
-    <Priority>1</Priority>
+    <Priority>2</Priority>
     <Source />
     <Status>Proposed</Status>
     <AssignedTo />
     <Release />
     <DateAdded>2017-04-02T13:06:18.6534697-03:00</DateAdded>
-    <DateModified>2017-04-02T13:06:49.2985191-03:00</DateModified>
+    <DateModified>2017-04-02T19:59:02.1736735-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
@@ -283,7 +283,7 @@
     <UniqueID>REQ-51ac88c0-d97f-4976-ac90-681677b366a5</UniqueID>
     <UserID>REQ-13</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
-    <Name>Avaliar Mídia</Name>
+    <Name>Marcar Mídia</Name>
     <Description>O sistema deve permitir ao usuário marcar uma determinada mídia como consumida, contendo código da marcação, data, horário (do momento da postagem) e, opcionalmente, nota dada à determinada mídia.</Description>
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
 {\colortbl ;\red0\green0\blue0;}
@@ -298,7 +298,7 @@
     <AssignedTo />
     <Release />
     <DateAdded>2017-04-02T14:11:45.7429672-03:00</DateAdded>
-    <DateModified>2017-04-02T14:14:01.8897543-03:00</DateModified>
+    <DateModified>2017-04-02T19:59:25.3024583-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
@@ -314,13 +314,13 @@
 </RichDescription>
     <Sequence>13</Sequence>
     <Type>Non-functional</Type>
-    <Priority>1</Priority>
+    <Priority>2</Priority>
     <Source />
     <Status />
     <AssignedTo />
     <Release />
     <DateAdded>2017-04-02T14:11:50.9032623-03:00</DateAdded>
-    <DateModified>2017-04-02T14:16:46.3091586-03:00</DateModified>
+    <DateModified>2017-04-02T19:59:32.1867001-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
@@ -372,21 +372,21 @@
     <UserID>REQ-18</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Buscar mídias por tipo e gênero</Name>
-    <Description>O sistema deve permitir ao usuário fazer uma busca geral pelas mídias, podendo selecionar o tipo de mídia (filmes, séries, livros), assim como os diferentes gêneros cadastrados para cada tipo de mídia. Poderá fazer uma pesquisa textual dentro destes resultados filtrados, </Description>
+    <Description>O sistema deve permitir ao usuário fazer uma busca geral pelas mídias, podendo selecionar o tipo de mídia (filmes, episódios, livros), assim como os diferentes gêneros cadastrados para cada tipo de mídia. Poderá fazer uma pesquisa textual dentro destes resultados filtrados.</Description>
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
 {\colortbl ;\red0\green0\blue0;}
-\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio fazer uma busca geral pelas m\'eddias, podendo selecionar o tipo de m\'eddia (filmes, s\'e9ries, livros), assim como os diferentes g\'eaneros cadastrados para cada tipo de m\'eddia. Poder\'e1 fazer uma pesquisa textual dentro destes resultados filtrados, \par
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio fazer uma busca geral pelas m\'eddias, podendo selecionar o tipo de m\'eddia (filmes, epis\'f3dios, livros), assim como os diferentes g\'eaneros cadastrados para cada tipo de m\'eddia. Poder\'e1 fazer uma pesquisa textual dentro destes resultados filtrados.\par
 }
 </RichDescription>
     <Sequence>17</Sequence>
     <Type>Functional</Type>
-    <Priority>1</Priority>
+    <Priority>2</Priority>
     <Source />
     <Status>Proposed</Status>
     <AssignedTo />
     <Release />
     <DateAdded>2017-04-02T19:26:05.6815404-03:00</DateAdded>
-    <DateModified>2017-04-02T19:39:51.2461862-03:00</DateModified>
+    <DateModified>2017-04-02T20:01:22.5559289-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
@@ -433,6 +433,204 @@
     <DateModified>2017-04-02T19:39:52.7955892-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
+  <Requirement>
+    <UniqueID>REQ-133ef2e8-8e43-4b31-89c8-1966fb5b69fe</UniqueID>
+    <UserID>REQ-20</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Atualizações sobre mídia</Name>
+    <Description>O sistema deve gerar atualizações com base nas marcações recentes de um determinado usuário, contendo código, mídia consumida, coleção na qual esta se encontra - se cabível - e sua respectiva nota.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve gerar atualiza\'e7\'f5es com base nas marca\'e7\'f5es recentes de um determinado usu\'e1rio, contendo c\'f3digo, m\'eddia consumida, cole\'e7\'e3o na qual esta se encontra - se cab\'edvel - e sua respectiva nota.\par
+}
+</RichDescription>
+    <Sequence>19</Sequence>
+    <Type>Functional</Type>
+    <Priority>2</Priority>
+    <Source />
+    <Status>Proposed</Status>
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T20:03:28.6196431-03:00</DateAdded>
+    <DateModified>2017-04-02T20:14:02.7905226-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-98623090-8860-4612-a622-fc4c90bcf7bb</UniqueID>
+    <UserID>REQ-21</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Seguir Usuário</Name>
+    <Description>O sistema deve permitir ao usuário que siga outros usuários da rede, de forma a receber notificações e visualizar atualizações sobre as marcações dos mesmos.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio que siga outros usu\'e1rios da rede, de forma a receber notifica\'e7\'f5es e visualizar atualiza\'e7\'f5es sobre as marca\'e7\'f5es dos mesmos.\par
+}
+</RichDescription>
+    <Sequence>20</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status>Proposed</Status>
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T20:04:00.5411797-03:00</DateAdded>
+    <DateModified>2017-04-02T20:14:08.4976719-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-72bf9ca2-a426-4cc5-ae4c-2d8a56e6ef09</UniqueID>
+    <UserID>REQ-22</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Gerar recomendações</Name>
+    <Description>O sistema deve processar todas as marcações recentes de determinado usuário através de algoritmos de recomendação com o intuito de gerar recomendações para o mesmo.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve processar todas as marca\'e7\'f5es recentes de determinado usu\'e1rio atrav\'e9s de algoritmos de recomenda\'e7\'e3o com o intuito de gerar recomenda\'e7\'f5es para o mesmo.\par
+}
+</RichDescription>
+    <Sequence>21</Sequence>
+    <Type>Functional</Type>
+    <Priority>2</Priority>
+    <Source />
+    <Status>Proposed</Status>
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T20:05:20.7517835-03:00</DateAdded>
+    <DateModified>2017-04-02T20:14:11.3997324-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-8b163f80-1a6c-484f-a208-f76f8c63b21c</UniqueID>
+    <UserID>REQ-23</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Assinar coleção</Name>
+    <Description>O sistema deve permitir ao usuário “assinar” uma determinada coleção para que receba uma notificação caso uma nova mídia seja adicionada à mesma.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio \ldblquote assinar\rdblquote  uma determinada cole\'e7\'e3o para que receba uma notifica\'e7\'e3o caso uma nova m\'eddia seja adicionada \'e0 mesma.\par
+}
+</RichDescription>
+    <Sequence>22</Sequence>
+    <Type>Functional</Type>
+    <Priority>2</Priority>
+    <Source />
+    <Status>Proposed</Status>
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T20:06:24.8679191-03:00</DateAdded>
+    <DateModified>2017-04-02T20:14:53.9792798-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-71ef33b5-82dd-42f5-b615-3231b876b2e2</UniqueID>
+    <UserID>REQ-24</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Notificação sobre coleções assinadas</Name>
+    <Description>O sistema deve notificar ao usuário quando uma nova mídia for adicionada às coleções que ele assina, contendo título, data de lançamento, nota parcial e comentários melhor votados.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve notificar ao usu\'e1rio quando uma nova m\'eddia for adicionada \'e0s cole\'e7\'f5es que ele assina, contendo t\'edtulo, data de lan\'e7amento, nota parcial e coment\'e1rios melhor votados.\par
+}
+</RichDescription>
+    <Sequence>23</Sequence>
+    <Type>Functional</Type>
+    <Priority>2</Priority>
+    <Source />
+    <Status>Proposed</Status>
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T20:07:10.9259793-03:00</DateAdded>
+    <DateModified>2017-04-02T20:15:03.5104735-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-b70170cc-0516-44ca-b04a-44e37c02eb25</UniqueID>
+    <UserID>REQ-25</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Comentar sobre mídia</Name>
+    <Description>O sistema deve permitir ao usuário comentar sobre as mídias já consumidas, contendo horário de publicação, comentário e nota relativa ao comentário.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio comentar sobre as m\'eddias j\'e1 consumidas, contendo hor\'e1rio de publica\'e7\'e3o, coment\'e1rio e nota relativa ao coment\'e1rio.\par
+}
+</RichDescription>
+    <Sequence>24</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status>Proposed</Status>
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T20:08:20.9638763-03:00</DateAdded>
+    <DateModified>2017-04-02T20:14:27.1120939-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-df801a67-fd56-4dcf-a30a-8c7fc149633a</UniqueID>
+    <UserID>REQ-26</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Página "Perfil"</Name>
+    <Description>O sistema deve permitir ao usuário acessar uma página de “Perfil” onde será exibida sua foto de perfil, assim como suas mídias consumidas separadas por tipo. Poderá nesta interface acessar uma lista “Seguidores” com os usuários que o seguem e outra “Seguindo” com os usuários que ele está seguindo. Poderá também editar sua foto assim como as mídias em exibição.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio acessar uma p\'e1gina de \ldblquote Perfil\rdblquote  onde ser\'e1 exibida sua foto de perfil, assim como suas m\'eddias consumidas separadas por tipo. Poder\'e1 nesta interface acessar uma lista \ldblquote Seguidores\rdblquote  com os usu\'e1rios que o seguem e outra \ldblquote Seguindo\rdblquote  com os usu\'e1rios que ele est\'e1 seguindo. Poder\'e1 tamb\'e9m editar sua foto assim como as m\'eddias em exibi\'e7\'e3o.\par
+}
+</RichDescription>
+    <Sequence>25</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status>Proposed</Status>
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T20:09:00.2595134-03:00</DateAdded>
+    <DateModified>2017-04-02T20:14:32.0676048-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-6da24b60-2731-4320-814e-43adbaac2021</UniqueID>
+    <UserID>REQ-27</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Página "Início"</Name>
+    <Description>O sistema deve permitir ao usuário acessar uma página “Início” onde poderá visualizar notícias e atualizações relacionadas aos conteúdos que já tiver consumido.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio acessar uma p\'e1gina \ldblquote In\'edcio\rdblquote  onde poder\'e1 visualizar not\'edcias e atualiza\'e7\'f5es relacionadas aos conte\'fados que j\'e1 tiver consumido.\par
+}
+</RichDescription>
+    <Sequence>26</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status>Proposed</Status>
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T20:11:18.6742243-03:00</DateAdded>
+    <DateModified>2017-04-02T20:14:35.3926203-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-f1a5a934-80de-47cc-ad2b-71d1d1a4e383</UniqueID>
+    <UserID>REQ-28</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Página "Seguindo"</Name>
+    <Description>O sistema deve permitir ao usuário acessar uma  página “Seguindo”, onde possa monitorar atividades relevantes (como novas mídias consumidas, comentários e notas) dos usuários que esteja seguindo.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio acessar uma  p\'e1gina \ldblquote Seguindo\rdblquote , onde possa monitorar atividades relevantes (como novas m\'eddias consumidas, coment\'e1rios e notas) dos usu\'e1rios que esteja seguindo.\par
+}
+</RichDescription>
+    <Sequence>27</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status>Proposed</Status>
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T20:11:53.424815-03:00</DateAdded>
+    <DateModified>2017-04-02T20:14:39.6020059-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
   <UserID>
     <DefaultPrefix>UC-</DefaultPrefix>
     <NextValue>1</NextValue>
@@ -443,11 +641,11 @@
   </UserID>
   <UserID>
     <DefaultPrefix>REQ-</DefaultPrefix>
-    <NextValue>20</NextValue>
+    <NextValue>29</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>DEF-</DefaultPrefix>
-    <NextValue>1</NextValue>
+    <NextValue>2</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>S-</DefaultPrefix>
