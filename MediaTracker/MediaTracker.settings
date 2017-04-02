@@ -87,7 +87,7 @@
   </IssueList>
   <DictionaryList>
     <Columns>Name,UserID,Description,Parent</Columns>
-    <ColumnWidths>130,60,320,125</ColumnWidths>
+    <ColumnWidths>201,60,320,125</ColumnWidths>
   </DictionaryList>
   <FilteredLists />
   <OpenFilters />

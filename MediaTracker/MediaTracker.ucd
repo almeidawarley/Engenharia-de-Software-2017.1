@@ -2,7 +2,7 @@
 <UCTDataSet xmlns="http://serliosoft.com/UCTData.xsd">
   <VersionInfo>
     <Version>5.0</Version>
-    <SavedWith>12.0.6283</SavedWith>
+    <SavedWith>12.0.6296</SavedWith>
     <CreatedWith>12.0.6296</CreatedWith>
   </VersionInfo>
   <Project>
@@ -108,10 +108,10 @@
     <UserID>REQ-5</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Interoperabilidade entre navegadores</Name>
-    <Description>O sistema deve garantir que todas as senhas possuam no mínimo 6 caracteres com, pelo menos, um número e uma letra maiúscula.</Description>
+    <Description>O sistema deverá ser executado (acessado) corretamente pelos navegadores “Google Chrome”, “Safari”, “Mozilla Firefox”, “Opera” e “Microsoft Edge”.</Description>
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
 {\colortbl ;\red0\green0\blue0;}
-\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve garantir que todas as senhas possuam no m\'ednimo 6 caracteres com, pelo menos, um n\'famero e uma letra mai\'fascula.\par
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema dever\'e1 ser executado (acessado) corretamente pelos navegadores \ldblquote Google Chrome\rdblquote , \ldblquote Safari\rdblquote , \ldblquote Mozilla Firefox\rdblquote , \ldblquote Opera\rdblquote  e \ldblquote Microsoft Edge\rdblquote .\par
 }
 </RichDescription>
     <Sequence>4</Sequence>
@@ -122,7 +122,7 @@
     <AssignedTo />
     <Release />
     <DateAdded>2017-04-02T13:03:16.927295-03:00</DateAdded>
-    <DateModified>2017-04-02T13:03:38.9383343-03:00</DateModified>
+    <DateModified>2017-04-02T19:23:09.2501899-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
@@ -367,6 +367,72 @@
     <DateModified>2017-04-02T14:17:40.1692392-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
+  <Requirement>
+    <UniqueID>REQ-b2a6ae14-34ac-4fec-91cb-ac003a612514</UniqueID>
+    <UserID>REQ-18</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Buscar mídias por tipo e gênero</Name>
+    <Description>O sistema deve permitir ao usuário fazer uma busca geral pelas mídias, podendo selecionar o tipo de mídia (filmes, séries, livros), assim como os diferentes gêneros cadastrados para cada tipo de mídia. Poderá fazer uma pesquisa textual dentro destes resultados filtrados, </Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio fazer uma busca geral pelas m\'eddias, podendo selecionar o tipo de m\'eddia (filmes, s\'e9ries, livros), assim como os diferentes g\'eaneros cadastrados para cada tipo de m\'eddia. Poder\'e1 fazer uma pesquisa textual dentro destes resultados filtrados, \par
+}
+</RichDescription>
+    <Sequence>17</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status>Proposed</Status>
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T19:26:05.6815404-03:00</DateAdded>
+    <DateModified>2017-04-02T19:39:51.2461862-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-98743581-5260-4125-b0c6-44c1fa3e24ad</UniqueID>
+    <UserID>REQ-17</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Buscar mídias textualmente</Name>
+    <Description>O sistema deve permitir ao usuário pesquisar (textualmente) mídias cadastradas por “nome”, “participantes” e “palavras-chave”.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio pesquisar (textualmente) m\'eddias cadastradas por \ldblquote nome\rdblquote , \ldblquote participantes\rdblquote  e \ldblquote palavras-chave\rdblquote .\par
+}
+</RichDescription>
+    <Sequence>16</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status>Proposed</Status>
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T19:27:42.7274794-03:00</DateAdded>
+    <DateModified>2017-04-02T19:35:40.960988-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-6c2cd233-9bd2-4b4f-b141-493cbd92cfa8</UniqueID>
+    <UserID>REQ-19</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Ordenar resultados de busca</Name>
+    <Description>O sistema deve permitir ao usuário ordenar os resultados de uma busca por “nota”, “data de lançamento”, “relevância” ou “popularidade” (relativo ao quanto a mídia está sendo comentada atualmente, etc), crescente ou decrescentemente.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio ordenar os resultados de uma busca por \ldblquote nota\rdblquote , \ldblquote data de lan\'e7amento\rdblquote , \ldblquote relev\'e2ncia\rdblquote  ou \ldblquote popularidade\rdblquote  (relativo ao quanto a m\'eddia est\'e1 sendo comentada atualmente, etc), crescente ou decrescentemente.\par
+}
+</RichDescription>
+    <Sequence>18</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status>Proposed</Status>
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T19:28:44.4841148-03:00</DateAdded>
+    <DateModified>2017-04-02T19:39:52.7955892-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
   <UserID>
     <DefaultPrefix>UC-</DefaultPrefix>
     <NextValue>1</NextValue>
@@ -377,7 +443,7 @@
   </UserID>
   <UserID>
     <DefaultPrefix>REQ-</DefaultPrefix>
-    <NextValue>17</NextValue>
+    <NextValue>20</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>DEF-</DefaultPrefix>
