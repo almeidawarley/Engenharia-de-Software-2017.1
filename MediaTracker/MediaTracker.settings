@@ -15,7 +15,7 @@
       <boolean>false</boolean>
     </UseCaseViewSortOrder>
     <ActorViewSortColumns>
-      <string>Name</string>
+      <string>UserID</string>
       <string />
       <string />
     </ActorViewSortColumns>
@@ -35,7 +35,7 @@
       <boolean>false</boolean>
     </StoryViewSortOrder>
     <RequirementViewSortColumns>
-      <string>ReqType</string>
+      <string>UserID</string>
       <string />
       <string />
     </RequirementViewSortColumns>
@@ -78,8 +78,8 @@
     <ColumnWidths>314,57,80,80,125</ColumnWidths>
   </StoryList>
   <RequirementList>
-    <Columns>Name,UserID,ReqType,Priority,Package</Columns>
-    <ColumnWidths>321,125,171,63,89</ColumnWidths>
+    <Columns>Name,UserID,ReqType,Priority,Package,AssignedTo</Columns>
+    <ColumnWidths>321,125,171,63,89,60</ColumnWidths>
   </RequirementList>
   <IssueList>
     <Columns>Description,Status,AppliesTo,AssignedTo,Priority,ResolveBy</Columns>

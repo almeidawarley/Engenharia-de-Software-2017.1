@@ -63,32 +63,32 @@
     <Priority>1</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Bruno</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T12:56:05.6275703-03:00</DateAdded>
-    <DateModified>2017-04-02T12:57:10.2579789-03:00</DateModified>
+    <DateModified>2017-04-03T18:28:39.7051853-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-5e74cb6b-aafe-485f-acdc-76eec5484356</UniqueID>
-    <UserID>REQ-2</UserID>
+    <UserID>REQ-4</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
-    <Name>Cadastro de "participantes"</Name>
+    <Name>Sugerir Participante</Name>
     <Description>O sistema deve permitir ao usuário sugerir o cadastro de participantes das mídias - tais como diretores, autores, atores, dentre outros - contendo código, foto de perfil, nome completo, área de atuação, data de nascimento e redes sociais (Facebook, Twitter, Snapchat e Instagram).</Description>
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
 {\colortbl ;\red0\green0\blue0;}
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio sugerir o cadastro de participantes das m\'eddias - tais como diretores, autores, atores, dentre outros - contendo c\'f3digo, foto de perfil, nome completo, \'e1rea de atua\'e7\'e3o, data de nascimento e redes sociais (Facebook, Twitter, Snapchat e Instagram).\par
 }
 </RichDescription>
-    <Sequence>1</Sequence>
+    <Sequence>3</Sequence>
     <Type>Functional</Type>
     <Priority>2</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Felipe</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T12:57:36.488029-03:00</DateAdded>
-    <DateModified>2017-04-02T19:58:46.0798734-03:00</DateModified>
+    <DateModified>2017-04-03T18:49:38.5577244-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
@@ -104,40 +104,40 @@
 </RichDescription>
     <Sequence>2</Sequence>
     <Type>Functional</Type>
-    <Priority>3</Priority>
+    <Priority>2</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Lohan</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T13:00:07.2801814-03:00</DateAdded>
-    <DateModified>2017-04-02T19:58:51.8265144-03:00</DateModified>
+    <DateModified>2017-04-03T19:05:05.5664342-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-4a2df3f1-3fc5-4542-9562-5d5f189b0a47</UniqueID>
-    <UserID>REQ-4</UserID>
+    <UserID>REQ-27</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Segurança de senhas</Name>
-    <Description>O sistema deve garantir que todas as senhas possuam no mínimo 6 caracteres com, pelo menos, um número e uma letra maiúscula.</Description>
+    <Description>O sistema deve garantir que todas as senhas possuam no mínimo 8 caracteres com, pelo menos, um número e uma letra maiúscula.</Description>
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
 {\colortbl ;\red0\green0\blue0;}
-\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve garantir que todas as senhas possuam no m\'ednimo 6 caracteres com, pelo menos, um n\'famero e uma letra mai\'fascula.\par
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve garantir que todas as senhas possuam no m\'ednimo 8 caracteres com, pelo menos, um n\'famero e uma letra mai\'fascula.\par
 }
 </RichDescription>
-    <Sequence>3</Sequence>
+    <Sequence>26</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Warley</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T13:01:16.5227783-03:00</DateAdded>
-    <DateModified>2017-04-02T13:01:53.5868399-03:00</DateModified>
+    <DateModified>2017-04-03T19:05:46.5129203-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-c2141fb1-dc4f-4b4c-b669-0c3143614fae</UniqueID>
-    <UserID>REQ-5</UserID>
+    <UserID>REQ-29</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Interoperabilidade entre navegadores</Name>
     <Description>O sistema deverá ser executado (acessado) corretamente pelos navegadores “Google Chrome”, “Safari”, “Mozilla Firefox”, “Opera” e “Microsoft Edge”.</Description>
@@ -146,20 +146,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema dever\'e1 ser executado (acessado) corretamente pelos navegadores \ldblquote Google Chrome\rdblquote , \ldblquote Safari\rdblquote , \ldblquote Mozilla Firefox\rdblquote , \ldblquote Opera\rdblquote  e \ldblquote Microsoft Edge\rdblquote .\par
 }
 </RichDescription>
-    <Sequence>4</Sequence>
+    <Sequence>28</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Bruno</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T13:03:16.927295-03:00</DateAdded>
-    <DateModified>2017-04-02T19:23:09.2501899-03:00</DateModified>
+    <DateModified>2017-04-03T19:05:46.5144318-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-ee507d82-ef57-42fa-ba0e-aed7bc27f53a</UniqueID>
-    <UserID>REQ-6</UserID>
+    <UserID>REQ-30</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Uso de Criptografia</Name>
     <Description>O sistema deve criptografar as informações pessoais dos usuários, como senhas.</Description>
@@ -168,20 +168,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve criptografar as informa\'e7\'f5es pessoais dos usu\'e1rios, como senhas.\par
 }
 </RichDescription>
-    <Sequence>5</Sequence>
+    <Sequence>29</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Felipe</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T13:04:22.0132011-03:00</DateAdded>
-    <DateModified>2017-04-02T13:04:45.7212403-03:00</DateModified>
+    <DateModified>2017-04-03T19:05:46.5149055-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-81fc2547-9f3e-418e-9b59-f2fd5c87b0f6</UniqueID>
-    <UserID>REQ-7</UserID>
+    <UserID>REQ-2</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Cadastro de gêneros</Name>
     <Description>O sistema deve permitir ao administrador cadastrar gêneros de mídias, contendo código, nome e breve descrição sobre aquele gênero.</Description>
@@ -190,26 +190,92 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao administrador cadastrar g\'eaneros de m\'eddias, contendo c\'f3digo, nome e breve descri\'e7\'e3o sobre aquele g\'eanero.\par
 }
 </RichDescription>
-    <Sequence>6</Sequence>
+    <Sequence>1</Sequence>
     <Type>Functional</Type>
     <Priority>2</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Lohan</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T13:06:18.6534697-03:00</DateAdded>
-    <DateModified>2017-04-02T19:59:02.1736735-03:00</DateModified>
+    <DateModified>2017-04-03T18:49:38.5572231-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-b1a238e8-a4b4-40e6-b63c-4681ebab7a3b</UniqueID>
-    <UserID>REQ-8</UserID>
+    <UserID>REQ-5</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Sugerir Livros</Name>
-    <Description>O sistema deve permitir ao usuário sugerir o cadastro de livros como mídias, contendo código, título, gênero, participantes, idioma, ISBN, nota média e palavras-chaves.</Description>
+    <Description>O sistema deve permitir ao usuário sugerir o cadastro de livros como mídias, contendo código, título, gêneros, participantes, idioma, ISBN, nota média e palavras-chaves.</Description>
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
-{\colortbl ;\red0\green0\blue0;}
-\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio sugerir o cadastro de livros como m\'eddias, contendo c\'f3digo, t\'edtulo, g\'eanero, participantes, idioma, ISBN, nota m\'e9dia e palavras-chaves.\par
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao \cf2\ul usu\'e1rio\cf1\ulnone  sugerir o cadastro de livros como m\'eddias, contendo c\'f3digo, t\'edtulo, g\'eaneros, participantes, idioma, ISBN, nota m\'e9dia e \cf3 palavras-chaves\cf1 .\par
+}
+</RichDescription>
+    <Sequence>4</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo>Warley</AssignedTo>
+    <Release />
+    <DateAdded>2017-04-02T14:09:20.2706466-03:00</DateAdded>
+    <DateModified>2017-04-03T18:45:51.8554431-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-8bfc84ec-925e-4402-a60a-9aef4f5b8040</UniqueID>
+    <UserID>REQ-6</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Sugerir Episódios</Name>
+    <Description>O sistema deve permitir ao usuário sugerir o cadastro de episódios como mídias, contendo código, nome, gêneros, participantes, duração, sinopse, data de exibição, nota média e palavras-chaves.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao \cf2\ul usu\'e1rio\cf1\ulnone  sugerir o cadastro de epis\'f3dios como m\'eddias, contendo c\'f3digo, nome, g\'eaneros, participantes, dura\'e7\'e3o, sinopse, data de exibi\'e7\'e3o, nota m\'e9dia e \cf3 palavras-chaves\cf1 .\par
+}
+</RichDescription>
+    <Sequence>5</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo>Bruno</AssignedTo>
+    <Release />
+    <DateAdded>2017-04-02T14:10:36.8880289-03:00</DateAdded>
+    <DateModified>2017-04-03T18:45:51.8559443-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-d4e59b3c-bcd0-4922-8e6b-c4352cf9bd4c</UniqueID>
+    <UserID>REQ-7</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Sugerir Filmes</Name>
+    <Description>O sistema deve permitir ao usuário sugerir o cadastro de filmes como mídias, contendo código, nome, gêneros, participantes, duração, sinopse, ano de lançamento, nota média e palavras-chaves.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao \cf2\ul usu\'e1rio\cf1\ulnone  sugerir o cadastro de filmes como m\'eddias, contendo c\'f3digo, nome, g\'eaneros, participantes, dura\'e7\'e3o, sinopse, ano de lan\'e7amento, nota m\'e9dia e \cf3 palavras-chaves\cf1 .\par
+}
+</RichDescription>
+    <Sequence>6</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo>Felipe</AssignedTo>
+    <Release />
+    <DateAdded>2017-04-02T14:11:17.1043291-03:00</DateAdded>
+    <DateModified>2017-04-03T18:45:51.8579499-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-ad6265b1-56b7-4eff-8b3e-b44662c22aef</UniqueID>
+    <UserID>REQ-8</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Sugerir Coleções</Name>
+    <Description>O sistema deve permitir ao usuário sugerir cadastro de coleções de mídias, contendo nome, mídias integrantes, nota média com base nas mídias integrantes, descrição e palavras-chaves. </Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao \cf2\ul usu\'e1rio\cf1\ulnone  sugerir cadastro de cole\'e7\'f5es de m\'eddias, contendo nome, m\'eddias integrantes, nota m\'e9dia com base nas m\'eddias integrantes, descri\'e7\'e3o e \cf3 palavras-chaves\cf1 . \par
 }
 </RichDescription>
     <Sequence>7</Sequence>
@@ -217,81 +283,15 @@
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
-    <Release />
-    <DateAdded>2017-04-02T14:09:20.2706466-03:00</DateAdded>
-    <DateModified>2017-04-02T14:10:29.8636271-03:00</DateModified>
-    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
-  </Requirement>
-  <Requirement>
-    <UniqueID>REQ-8bfc84ec-925e-4402-a60a-9aef4f5b8040</UniqueID>
-    <UserID>REQ-9</UserID>
-    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
-    <Name>Sugerir Episódios</Name>
-    <Description>O sistema deve permitir ao usuário sugerir o cadastro de episódios como mídias, contendo título, duração, sinopse, participantes, data de exibição, nota média e palavras-chaves.</Description>
-    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
-{\colortbl ;\red0\green0\blue0;}
-\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio sugerir o cadastro de epis\'f3dios como m\'eddias, contendo t\'edtulo, dura\'e7\'e3o, sinopse, participantes, data de exibi\'e7\'e3o, nota m\'e9dia e palavras-chaves.\par
-}
-</RichDescription>
-    <Sequence>8</Sequence>
-    <Type>Functional</Type>
-    <Priority>1</Priority>
-    <Source />
-    <Status />
-    <AssignedTo />
-    <Release />
-    <DateAdded>2017-04-02T14:10:36.8880289-03:00</DateAdded>
-    <DateModified>2017-04-02T14:10:58.7052768-03:00</DateModified>
-    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
-  </Requirement>
-  <Requirement>
-    <UniqueID>REQ-d4e59b3c-bcd0-4922-8e6b-c4352cf9bd4c</UniqueID>
-    <UserID>REQ-10</UserID>
-    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
-    <Name>Sugerir Filmes</Name>
-    <Description>O sistema deve permitir ao usuário sugerir o cadastro de filmes como mídias, contendo nome, duração, sinopse, participantes, ano de lançamento, gêneros, nota média e palavras-chaves.</Description>
-    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
-{\colortbl ;\red0\green0\blue0;}
-\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio sugerir o cadastro de filmes como m\'eddias, contendo nome, dura\'e7\'e3o, sinopse, participantes, ano de lan\'e7amento, g\'eaneros, nota m\'e9dia e palavras-chaves.\par
-}
-</RichDescription>
-    <Sequence>9</Sequence>
-    <Type>Functional</Type>
-    <Priority>1</Priority>
-    <Source />
-    <Status />
-    <AssignedTo />
-    <Release />
-    <DateAdded>2017-04-02T14:11:17.1043291-03:00</DateAdded>
-    <DateModified>2017-04-02T14:12:55.4219526-03:00</DateModified>
-    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
-  </Requirement>
-  <Requirement>
-    <UniqueID>REQ-ad6265b1-56b7-4eff-8b3e-b44662c22aef</UniqueID>
-    <UserID>REQ-11</UserID>
-    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
-    <Name>Sugerir Coleções</Name>
-    <Description>O sistema deve permitir ao  usuário sugerir cadastro de coleções de mídias, contendo nome, mídias integrantes, nota média com base nas mídias integrantes, descrição e palavras-chave. </Description>
-    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
-{\colortbl ;\red0\green0\blue0;}
-\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao  usu\'e1rio sugerir cadastro de cole\'e7\'f5es de m\'eddias, contendo nome, m\'eddias integrantes, nota m\'e9dia com base nas m\'eddias integrantes, descri\'e7\'e3o e palavras-chave. \par
-}
-</RichDescription>
-    <Sequence>10</Sequence>
-    <Type>Functional</Type>
-    <Priority>1</Priority>
-    <Source />
-    <Status />
-    <AssignedTo />
+    <AssignedTo>Lohan</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T14:11:42.7437956-03:00</DateAdded>
-    <DateModified>2017-04-02T14:13:00.6302505-03:00</DateModified>
+    <DateModified>2017-04-03T18:45:51.8584512-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-1278f0d1-7444-40ee-9122-8cc340f9f543</UniqueID>
-    <UserID>REQ-12</UserID>
+    <UserID>REQ-9</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Avaliar Sugestões</Name>
     <Description>O sistema deve permitir ao administrador ter acesso a todas sugestões de cadastro em uma página, para que possa aprovar e reprovar cada uma conforme o caso. O retorno da sugestão deve ser dado ao usuário através de um e-mail.</Description>
@@ -300,15 +300,15 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao administrador ter acesso a todas sugest\'f5es de cadastro em uma p\'e1gina, para que possa aprovar e reprovar cada uma conforme o caso. O retorno da sugest\'e3o deve ser dado ao usu\'e1rio atrav\'e9s de um e-mail.\par
 }
 </RichDescription>
-    <Sequence>11</Sequence>
+    <Sequence>8</Sequence>
     <Type>Functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Warley</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T14:11:44.5268976-03:00</DateAdded>
-    <DateModified>2017-04-02T14:13:07.0616183-03:00</DateModified>
+    <DateModified>2017-04-03T18:57:12.0650292-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
@@ -327,15 +327,15 @@
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Bruno</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T14:11:45.7429672-03:00</DateAdded>
-    <DateModified>2017-04-02T19:59:25.3024583-03:00</DateModified>
+    <DateModified>2017-04-03T19:01:12.1933862-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-f3ff64dc-3536-4082-9046-90169c20c1a4</UniqueID>
-    <UserID>REQ-14</UserID>
+    <UserID>REQ-31</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Uso de Cookies</Name>
     <Description>O sistema deve fazer uso de ‘cookies’ para aprimorar e facilitar o uso dos mecanismo de buscas.</Description>
@@ -344,20 +344,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve fazer uso de \lquote cookies\rquote  para aprimorar e facilitar o uso dos mecanismo de buscas.\par
 }
 </RichDescription>
-    <Sequence>13</Sequence>
+    <Sequence>30</Sequence>
     <Type>Non-functional</Type>
     <Priority>2</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Felipe</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T14:11:50.9032623-03:00</DateAdded>
-    <DateModified>2017-04-03T13:27:02.3642188-03:00</DateModified>
+    <DateModified>2017-04-03T19:05:46.5159361-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-d0dc8b09-79bd-46d3-86ed-3702a5929faf</UniqueID>
-    <UserID>REQ-15</UserID>
+    <UserID>REQ-32</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Armazenamento de Dados</Name>
     <Description>O sistema usará de um banco de dados para armazenamento das contas cadastradas e mídias sugeridas pelos usuários.</Description>
@@ -366,20 +366,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema usar\'e1 de um banco de dados para armazenamento das contas cadastradas e m\'eddias sugeridas pelos usu\'e1rios.\par
 }
 </RichDescription>
-    <Sequence>14</Sequence>
+    <Sequence>31</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Lohan</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T14:11:52.1513337-03:00</DateAdded>
-    <DateModified>2017-04-02T14:17:07.2633571-03:00</DateModified>
+    <DateModified>2017-04-03T19:05:46.5169379-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-8eadaa60-92f7-4e91-82ed-98f6c1400ae5</UniqueID>
-    <UserID>REQ-16</UserID>
+    <UserID>REQ-33</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Disponibilidade do Sistema</Name>
     <Description>O sistema deverá estar disponível para acesso a qualquer momento, tendo como exceção apenas situações de manutenção de erros graves.</Description>
@@ -388,20 +388,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema dever\'e1 estar dispon\'edvel para acesso a qualquer momento, tendo como exce\'e7\'e3o apenas situa\'e7\'f5es de manuten\'e7\'e3o de erros graves.\par
 }
 </RichDescription>
-    <Sequence>15</Sequence>
+    <Sequence>32</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Warley</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T14:11:53.5994165-03:00</DateAdded>
-    <DateModified>2017-04-02T14:17:40.1692392-03:00</DateModified>
+    <DateModified>2017-04-03T19:05:46.5174368-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-b2a6ae14-34ac-4fec-91cb-ac003a612514</UniqueID>
-    <UserID>REQ-18</UserID>
+    <UserID>REQ-11</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Buscar mídias por tipo e gênero</Name>
     <Description>O sistema deve permitir ao usuário fazer uma busca geral pelas mídias, podendo selecionar o tipo de mídia (filmes, episódios, livros), assim como os diferentes gêneros cadastrados para cada tipo de mídia. Poderá fazer uma pesquisa textual dentro destes resultados filtrados.</Description>
@@ -410,42 +410,42 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio fazer uma busca geral pelas m\'eddias, podendo selecionar o tipo de m\'eddia (filmes, epis\'f3dios, livros), assim como os diferentes g\'eaneros cadastrados para cada tipo de m\'eddia. Poder\'e1 fazer uma pesquisa textual dentro destes resultados filtrados.\par
 }
 </RichDescription>
-    <Sequence>17</Sequence>
+    <Sequence>10</Sequence>
     <Type>Functional</Type>
     <Priority>2</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Felipe</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T19:26:05.6815404-03:00</DateAdded>
-    <DateModified>2017-04-02T20:01:22.5559289-03:00</DateModified>
+    <DateModified>2017-04-03T18:59:21.8866725-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-98743581-5260-4125-b0c6-44c1fa3e24ad</UniqueID>
-    <UserID>REQ-17</UserID>
+    <UserID>REQ-10</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Buscar mídias textualmente</Name>
-    <Description>O sistema deve permitir ao usuário pesquisar (textualmente) mídias cadastradas por “nome”, “participantes” e “palavras-chave”.</Description>
+    <Description>O sistema deve permitir ao usuário pesquisar (textualmente) mídias cadastradas por nome, participantes e palavras-chaves.</Description>
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
-{\colortbl ;\red0\green0\blue0;}
-\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio pesquisar (textualmente) m\'eddias cadastradas por \ldblquote nome\rdblquote , \ldblquote participantes\rdblquote  e \ldblquote palavras-chave\rdblquote .\par
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao \cf2\ul usu\'e1rio\cf1\ulnone  pesquisar (textualmente) m\'eddias cadastradas por nome, participantes e \cf3 palavras-chaves\cf1 .\par
 }
 </RichDescription>
-    <Sequence>16</Sequence>
+    <Sequence>9</Sequence>
     <Type>Functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Bruno</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T19:27:42.7274794-03:00</DateAdded>
-    <DateModified>2017-04-02T19:35:40.960988-03:00</DateModified>
+    <DateModified>2017-04-03T18:58:00.1512088-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-6c2cd233-9bd2-4b4f-b141-493cbd92cfa8</UniqueID>
-    <UserID>REQ-19</UserID>
+    <UserID>REQ-12</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Ordenar resultados de busca</Name>
     <Description>O sistema deve permitir ao usuário ordenar os resultados de uma busca por “nota”, “data de lançamento”, “relevância” ou “popularidade” (relativo ao quanto a mídia está sendo comentada atualmente, etc), crescente ou decrescentemente.</Description>
@@ -454,20 +454,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio ordenar os resultados de uma busca por \ldblquote nota\rdblquote , \ldblquote data de lan\'e7amento\rdblquote , \ldblquote relev\'e2ncia\rdblquote  ou \ldblquote popularidade\rdblquote  (relativo ao quanto a m\'eddia est\'e1 sendo comentada atualmente, etc), crescente ou decrescentemente.\par
 }
 </RichDescription>
-    <Sequence>18</Sequence>
+    <Sequence>11</Sequence>
     <Type>Functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Lohan</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T19:28:44.4841148-03:00</DateAdded>
-    <DateModified>2017-04-02T19:39:52.7955892-03:00</DateModified>
+    <DateModified>2017-04-03T18:59:49.8878582-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-133ef2e8-8e43-4b31-89c8-1966fb5b69fe</UniqueID>
-    <UserID>REQ-20</UserID>
+    <UserID>REQ-17</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Atualizações sobre mídia</Name>
     <Description>O sistema deve gerar atualizações com base nas marcações recentes de um determinado usuário, contendo código, mídia consumida, coleção na qual esta se encontra - se cabível - e sua respectiva nota.</Description>
@@ -476,20 +476,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve gerar atualiza\'e7\'f5es com base nas marca\'e7\'f5es recentes de um determinado usu\'e1rio, contendo c\'f3digo, m\'eddia consumida, cole\'e7\'e3o na qual esta se encontra - se cab\'edvel - e sua respectiva nota.\par
 }
 </RichDescription>
-    <Sequence>19</Sequence>
+    <Sequence>16</Sequence>
     <Type>Functional</Type>
     <Priority>2</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Warley</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T20:03:28.6196431-03:00</DateAdded>
-    <DateModified>2017-04-02T20:14:02.7905226-03:00</DateModified>
+    <DateModified>2017-04-03T19:02:23.914891-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-98623090-8860-4612-a622-fc4c90bcf7bb</UniqueID>
-    <UserID>REQ-21</UserID>
+    <UserID>REQ-20</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Seguir Usuário</Name>
     <Description>O sistema deve permitir ao usuário que siga outros usuários da rede, de forma a receber notificações e visualizar atualizações sobre as marcações dos mesmos.</Description>
@@ -498,20 +498,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio que siga outros usu\'e1rios da rede, de forma a receber notifica\'e7\'f5es e visualizar atualiza\'e7\'f5es sobre as marca\'e7\'f5es dos mesmos.\par
 }
 </RichDescription>
-    <Sequence>20</Sequence>
+    <Sequence>19</Sequence>
     <Type>Functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Bruno</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T20:04:00.5411797-03:00</DateAdded>
-    <DateModified>2017-04-02T20:14:08.4976719-03:00</DateModified>
+    <DateModified>2017-04-03T18:49:38.5672495-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-72bf9ca2-a426-4cc5-ae4c-2d8a56e6ef09</UniqueID>
-    <UserID>REQ-22</UserID>
+    <UserID>REQ-15</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Gerar recomendações</Name>
     <Description>O sistema deve processar todas as marcações recentes de determinado usuário através de algoritmos de recomendação com o intuito de gerar recomendações para o mesmo.</Description>
@@ -520,20 +520,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve processar todas as marca\'e7\'f5es recentes de determinado usu\'e1rio atrav\'e9s de algoritmos de recomenda\'e7\'e3o com o intuito de gerar recomenda\'e7\'f5es para o mesmo.\par
 }
 </RichDescription>
-    <Sequence>21</Sequence>
+    <Sequence>14</Sequence>
     <Type>Functional</Type>
     <Priority>2</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Felipe</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T20:05:20.7517835-03:00</DateAdded>
-    <DateModified>2017-04-02T20:14:11.3997324-03:00</DateModified>
+    <DateModified>2017-04-03T19:01:40.587873-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-8b163f80-1a6c-484f-a208-f76f8c63b21c</UniqueID>
-    <UserID>REQ-23</UserID>
+    <UserID>REQ-18</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Assinar coleção</Name>
     <Description>O sistema deve permitir ao usuário “assinar” uma determinada coleção para que receba uma notificação caso uma nova mídia seja adicionada à mesma.</Description>
@@ -542,20 +542,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio \ldblquote assinar\rdblquote  uma determinada cole\'e7\'e3o para que receba uma notifica\'e7\'e3o caso uma nova m\'eddia seja adicionada \'e0 mesma.\par
 }
 </RichDescription>
-    <Sequence>22</Sequence>
+    <Sequence>17</Sequence>
     <Type>Functional</Type>
     <Priority>2</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Lohan</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T20:06:24.8679191-03:00</DateAdded>
-    <DateModified>2017-04-02T20:14:53.9792798-03:00</DateModified>
+    <DateModified>2017-04-03T19:02:49.9793837-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-71ef33b5-82dd-42f5-b615-3231b876b2e2</UniqueID>
-    <UserID>REQ-24</UserID>
+    <UserID>REQ-19</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Notificação sobre coleções assinadas</Name>
     <Description>O sistema deve notificar ao usuário quando uma nova mídia for adicionada às coleções que ele assina, contendo título, data de lançamento, nota parcial e comentários melhor votados.</Description>
@@ -564,20 +564,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve notificar ao usu\'e1rio quando uma nova m\'eddia for adicionada \'e0s cole\'e7\'f5es que ele assina, contendo t\'edtulo, data de lan\'e7amento, nota parcial e coment\'e1rios melhor votados.\par
 }
 </RichDescription>
-    <Sequence>23</Sequence>
+    <Sequence>18</Sequence>
     <Type>Functional</Type>
     <Priority>2</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Warley</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T20:07:10.9259793-03:00</DateAdded>
-    <DateModified>2017-04-02T20:15:03.5104735-03:00</DateModified>
+    <DateModified>2017-04-03T19:03:34.3823753-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-b70170cc-0516-44ca-b04a-44e37c02eb25</UniqueID>
-    <UserID>REQ-25</UserID>
+    <UserID>REQ-16</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Comentar sobre mídia</Name>
     <Description>O sistema deve permitir ao usuário comentar sobre as mídias já consumidas, contendo horário de publicação, comentário e nota relativa ao comentário.</Description>
@@ -586,20 +586,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio comentar sobre as m\'eddias j\'e1 consumidas, contendo hor\'e1rio de publica\'e7\'e3o, coment\'e1rio e nota relativa ao coment\'e1rio.\par
 }
 </RichDescription>
-    <Sequence>24</Sequence>
+    <Sequence>15</Sequence>
     <Type>Functional</Type>
-    <Priority>1</Priority>
+    <Priority>2</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Bruno</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T20:08:20.9638763-03:00</DateAdded>
-    <DateModified>2017-04-03T13:30:23.9149736-03:00</DateModified>
+    <DateModified>2017-04-03T19:01:54.7026575-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-df801a67-fd56-4dcf-a30a-8c7fc149633a</UniqueID>
-    <UserID>REQ-26</UserID>
+    <UserID>REQ-23</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Página "Perfil"</Name>
     <Description>O sistema deve permitir ao usuário acessar uma página de “Perfil” onde será exibida sua foto de perfil, assim como suas mídias consumidas e de interesse separadas por tipo. Poderá nesta interface acessar uma lista “Seguidores” com os usuários que o seguem e outra “Seguindo” com os usuários que ele está seguindo. Poderá também editar sua foto assim como as mídias em exibição.</Description>
@@ -608,20 +608,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio acessar uma p\'e1gina de \ldblquote Perfil\rdblquote  onde ser\'e1 exibida sua foto de perfil, assim como suas m\'eddias consumidas e de interesse separadas por tipo. Poder\'e1 nesta interface acessar uma lista \ldblquote Seguidores\rdblquote  com os usu\'e1rios que o seguem e outra \ldblquote Seguindo\rdblquote  com os usu\'e1rios que ele est\'e1 seguindo. Poder\'e1 tamb\'e9m editar sua foto assim como as m\'eddias em exibi\'e7\'e3o.\par
 }
 </RichDescription>
-    <Sequence>25</Sequence>
+    <Sequence>22</Sequence>
     <Type>Functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Felipe</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T20:09:00.2595134-03:00</DateAdded>
-    <DateModified>2017-04-02T22:51:12.0356796-03:00</DateModified>
+    <DateModified>2017-04-03T18:49:38.5697561-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-6da24b60-2731-4320-814e-43adbaac2021</UniqueID>
-    <UserID>REQ-27</UserID>
+    <UserID>REQ-22</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Página "Início"</Name>
     <Description>O sistema deve permitir ao usuário acessar uma página “Início” onde poderá visualizar notícias e atualizações relacionadas aos conteúdos que já tiver consumido.</Description>
@@ -630,20 +630,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio acessar uma p\'e1gina \ldblquote In\'edcio\rdblquote  onde poder\'e1 visualizar not\'edcias e atualiza\'e7\'f5es relacionadas aos conte\'fados que j\'e1 tiver consumido.\par
 }
 </RichDescription>
-    <Sequence>26</Sequence>
+    <Sequence>21</Sequence>
     <Type>Functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Lohan</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T20:11:18.6742243-03:00</DateAdded>
-    <DateModified>2017-04-02T20:14:35.3926203-03:00</DateModified>
+    <DateModified>2017-04-03T18:49:38.5687535-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-f1a5a934-80de-47cc-ad2b-71d1d1a4e383</UniqueID>
-    <UserID>REQ-28</UserID>
+    <UserID>REQ-24</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Página "Seguindo"</Name>
     <Description>O sistema deve permitir ao usuário acessar uma  página “Seguindo”, onde possa monitorar atividades relevantes (como novas mídias consumidas, comentários e notas) dos usuários que esteja seguindo.</Description>
@@ -652,20 +652,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio acessar uma  p\'e1gina \ldblquote Seguindo\rdblquote , onde possa monitorar atividades relevantes (como novas m\'eddias consumidas, coment\'e1rios e notas) dos usu\'e1rios que esteja seguindo.\par
 }
 </RichDescription>
-    <Sequence>27</Sequence>
+    <Sequence>23</Sequence>
     <Type>Functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status>Proposed</Status>
-    <AssignedTo />
+    <AssignedTo>Warley</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T20:11:53.424815-03:00</DateAdded>
-    <DateModified>2017-04-02T20:14:39.6020059-03:00</DateModified>
+    <DateModified>2017-04-03T18:49:38.5702576-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-86f03520-eb66-4c79-a355-d9e8db607113</UniqueID>
-    <UserID>REQ-29</UserID>
+    <UserID>REQ-26</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Conexão a Internet</Name>
     <Description>O sistema necessita de acesso a Internet para funcionar corretamente, visto que é uma aplicação cliente-servidor.</Description>
@@ -674,20 +674,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema necessita de acesso a Internet para funcionar corretamente, visto que \'e9 uma aplica\'e7\'e3o cliente-servidor.\par
 }
 </RichDescription>
-    <Sequence>28</Sequence>
+    <Sequence>25</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Bruno</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T22:10:04.3011808-03:00</DateAdded>
-    <DateModified>2017-04-02T22:15:51.5714155-03:00</DateModified>
+    <DateModified>2017-04-03T19:05:46.5118984-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-0028a666-1291-4e82-b4f1-27e202ffa4f7</UniqueID>
-    <UserID>REQ-30</UserID>
+    <UserID>REQ-34</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Acesso a conteúdo adulto</Name>
     <Description>O sistema deverá, por padrão, impedir que usuários visualizem conteúdo adulto, sendo permitido somente se devidamente configurado nas opções da conta.</Description>
@@ -696,20 +696,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema dever\'e1, por padr\'e3o, impedir que usu\'e1rios visualizem conte\'fado adulto, sendo permitido somente se devidamente configurado nas op\'e7\'f5es da conta.\par
 }
 </RichDescription>
-    <Sequence>29</Sequence>
+    <Sequence>33</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Felipe</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T22:15:14.7177495-03:00</DateAdded>
-    <DateModified>2017-04-02T22:16:18.9247944-03:00</DateModified>
+    <DateModified>2017-04-03T19:05:46.5184422-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-fc7fa87d-dd86-438d-9e0d-81656600953e</UniqueID>
-    <UserID>REQ-31</UserID>
+    <UserID>REQ-28</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Implementação</Name>
     <Description>O sistema deverá ser implementado utilizando o framework multiplataforma chamado Ionic, que faz uso de linguagens como JavaScript, TypeScript, CSS e HTML.</Description>
@@ -718,20 +718,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema dever\'e1 ser implementado utilizando o framework multiplataforma chamado Ionic, que faz uso de linguagens como JavaScript, TypeScript, CSS e HTML.\par
 }
 </RichDescription>
-    <Sequence>30</Sequence>
+    <Sequence>27</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Lohan</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T22:16:29.1293006-03:00</DateAdded>
-    <DateModified>2017-04-02T22:17:00.6579099-03:00</DateModified>
+    <DateModified>2017-04-03T19:05:46.5134229-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-823c9fa5-a92d-45cc-be4c-3c9d11c80488</UniqueID>
-    <UserID>REQ-32</UserID>
+    <UserID>REQ-35</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Unicidade de apelido/email</Name>
     <Description>O sistema deve garantir que o apelido e o e-mail cadastrados sejam únicos para cada usuário.</Description>
@@ -740,20 +740,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve garantir que o apelido e o e-mail cadastrados sejam \'fanicos para cada usu\'e1rio.\par
 }
 </RichDescription>
-    <Sequence>31</Sequence>
+    <Sequence>34</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Warley</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T22:17:19.86909-03:00</DateAdded>
-    <DateModified>2017-04-02T22:17:30.3507484-03:00</DateModified>
+    <DateModified>2017-04-03T18:45:51.881668-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-ed0da4b8-e546-450f-81cd-320261d0725c</UniqueID>
-    <UserID>REQ-33</UserID>
+    <UserID>REQ-36</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Importação de outras bases</Name>
     <Description>O sistema deve permitir ao usuário, durante sugestões de cadastro, importar informações dos seguintes sites: IMDb &lt;http://www.imdb.com/&gt; para filmes, episódios e participantes; MyAnimeList &lt;https://myanimelist.net/&gt; para animes e participantes; e LibraryThing &lt;https://www.librarything.com/&gt; para livros e participantes.</Description>
@@ -762,20 +762,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio, durante sugest\'f5es de cadastro, importar informa\'e7\'f5es dos seguintes sites: IMDb &lt;http://www.imdb.com/&gt; para filmes, epis\'f3dios e participantes; MyAnimeList &lt;https://myanimelist.net/&gt; para animes e participantes; e LibraryThing &lt;https://www.librarything.com/&gt; para livros e participantes.\par
 }
 </RichDescription>
-    <Sequence>32</Sequence>
+    <Sequence>35</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Bruno</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T22:22:44.2568104-03:00</DateAdded>
-    <DateModified>2017-04-02T22:38:54.1009916-03:00</DateModified>
+    <DateModified>2017-04-03T18:45:51.8826682-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-e1bbaad0-5ca1-48bc-9a28-2ea48c2df8bc</UniqueID>
-    <UserID>REQ-34</UserID>
+    <UserID>REQ-25</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Página "Configurações"</Name>
     <Description>O sistema deve permitir ao usuário acessar uma página de “Configurações” onde poderá alterar seus dados de e-mail e senha, trocar o esquema de cores e mudar a opção de notas (sendo as 3 opções de 0 a 10, de 0 a 100 e de uma a cinco estrelas).</Description>
@@ -784,20 +784,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio acessar uma p\'e1gina de \ldblquote Configura\'e7\'f5es\rdblquote  onde poder\'e1 alterar seus dados de e-mail e senha, trocar o esquema de cores e mudar a op\'e7\'e3o de notas (sendo as 3 op\'e7\'f5es de 0 a 10, de 0 a 100 e de uma a cinco estrelas).\par
 }
 </RichDescription>
-    <Sequence>33</Sequence>
+    <Sequence>24</Sequence>
     <Type>Functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Felipe</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T22:33:42.6476272-03:00</DateAdded>
-    <DateModified>2017-04-02T22:36:56.7770421-03:00</DateModified>
+    <DateModified>2017-04-03T18:49:38.5719101-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-7050d834-d8f5-4a12-9ece-0a2357d7851c</UniqueID>
-    <UserID>REQ-35</UserID>
+    <UserID>REQ-21</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Página "Login"</Name>
     <Description>O sistema deve possuir uma tela de login que permite ao usuário se conectar ao sistema utilizando e-mail e senha previamente cadastrados.</Description>
@@ -806,20 +806,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve possuir uma tela de login que permite ao usu\'e1rio se conectar ao sistema utilizando e-mail e senha previamente cadastrados.\par
 }
 </RichDescription>
-    <Sequence>34</Sequence>
+    <Sequence>20</Sequence>
     <Type>Functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Lohan</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T22:34:41.6158623-03:00</DateAdded>
-    <DateModified>2017-04-02T22:36:52.9930351-03:00</DateModified>
+    <DateModified>2017-04-03T18:49:38.5682523-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-e846a61f-b15f-4e19-ab7d-ddcb5501b949</UniqueID>
-    <UserID>REQ-36</UserID>
+    <UserID>REQ-37</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Filtro de sugestões</Name>
     <Description>O sistema deverá filtrar sugestões de mídias com base nas que já estão cadastradas no sistema, notificando o usuário que enviou a sugestão.</Description>
@@ -828,20 +828,20 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema dever\'e1 filtrar sugest\'f5es de m\'eddias com base nas que j\'e1 est\'e3o cadastradas no sistema, notificando o usu\'e1rio que enviou a sugest\'e3o.\par
 }
 </RichDescription>
-    <Sequence>35</Sequence>
+    <Sequence>36</Sequence>
     <Type>Non-functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Warley</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T22:36:11.3999436-03:00</DateAdded>
-    <DateModified>2017-04-02T22:37:12.7210959-03:00</DateModified>
+    <DateModified>2017-04-03T18:45:51.8836707-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
     <UniqueID>REQ-bf15e2fa-4b2c-4ba7-9b48-f4d39e635056</UniqueID>
-    <UserID>REQ-37</UserID>
+    <UserID>REQ-14</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Marcar interesse</Name>
     <Description>O sistema deve permitir ao usuário marcar uma determinada mídia como interesse, contendo código da marcação, data, horário e mídia de interesse.</Description>
@@ -850,15 +850,15 @@
 \viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio marcar uma determinada m\'eddia como interesse, contendo c\'f3digo da marca\'e7\'e3o, data, hor\'e1rio e m\'eddia de interesse.\par
 }
 </RichDescription>
-    <Sequence>36</Sequence>
+    <Sequence>13</Sequence>
     <Type>Functional</Type>
     <Priority>1</Priority>
     <Source />
     <Status />
-    <AssignedTo />
+    <AssignedTo>Bruno</AssignedTo>
     <Release />
     <DateAdded>2017-04-02T22:50:27.0138052-03:00</DateAdded>
-    <DateModified>2017-04-02T22:50:49.2422863-03:00</DateModified>
+    <DateModified>2017-04-03T19:01:23.2034923-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Goal>
@@ -957,12 +957,184 @@
   </UserID>
   <UserID>
     <DefaultPrefix>DEF-</DefaultPrefix>
-    <NextValue>5</NextValue>
+    <NextValue>4</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>S-</DefaultPrefix>
     <NextValue>1</NextValue>
   </UserID>
+  <ReqReq>
+    <ParentID>REQ-b1a238e8-a4b4-40e6-b63c-4681ebab7a3b</ParentID>
+    <ReqID>REQ-81fc2547-9f3e-418e-9b59-f2fd5c87b0f6</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-b1a238e8-a4b4-40e6-b63c-4681ebab7a3b</ParentID>
+    <ReqID>REQ-7b6cdeac-94a7-4b64-a7ed-a2997915ac53</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-b1a238e8-a4b4-40e6-b63c-4681ebab7a3b</ParentID>
+    <ReqID>REQ-5e74cb6b-aafe-485f-acdc-76eec5484356</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-8bfc84ec-925e-4402-a60a-9aef4f5b8040</ParentID>
+    <ReqID>REQ-7b6cdeac-94a7-4b64-a7ed-a2997915ac53</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-8bfc84ec-925e-4402-a60a-9aef4f5b8040</ParentID>
+    <ReqID>REQ-5e74cb6b-aafe-485f-acdc-76eec5484356</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-8bfc84ec-925e-4402-a60a-9aef4f5b8040</ParentID>
+    <ReqID>REQ-81fc2547-9f3e-418e-9b59-f2fd5c87b0f6</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-d4e59b3c-bcd0-4922-8e6b-c4352cf9bd4c</ParentID>
+    <ReqID>REQ-81fc2547-9f3e-418e-9b59-f2fd5c87b0f6</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-d4e59b3c-bcd0-4922-8e6b-c4352cf9bd4c</ParentID>
+    <ReqID>REQ-7b6cdeac-94a7-4b64-a7ed-a2997915ac53</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-d4e59b3c-bcd0-4922-8e6b-c4352cf9bd4c</ParentID>
+    <ReqID>REQ-5e74cb6b-aafe-485f-acdc-76eec5484356</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-ad6265b1-56b7-4eff-8b3e-b44662c22aef</ParentID>
+    <ReqID>REQ-7b6cdeac-94a7-4b64-a7ed-a2997915ac53</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-ad6265b1-56b7-4eff-8b3e-b44662c22aef</ParentID>
+    <ReqID>REQ-8bfc84ec-925e-4402-a60a-9aef4f5b8040</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-ad6265b1-56b7-4eff-8b3e-b44662c22aef</ParentID>
+    <ReqID>REQ-d4e59b3c-bcd0-4922-8e6b-c4352cf9bd4c</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-ad6265b1-56b7-4eff-8b3e-b44662c22aef</ParentID>
+    <ReqID>REQ-b1a238e8-a4b4-40e6-b63c-4681ebab7a3b</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-1278f0d1-7444-40ee-9122-8cc340f9f543</ParentID>
+    <ReqID>REQ-ad6265b1-56b7-4eff-8b3e-b44662c22aef</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-1278f0d1-7444-40ee-9122-8cc340f9f543</ParentID>
+    <ReqID>REQ-8bfc84ec-925e-4402-a60a-9aef4f5b8040</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-1278f0d1-7444-40ee-9122-8cc340f9f543</ParentID>
+    <ReqID>REQ-d4e59b3c-bcd0-4922-8e6b-c4352cf9bd4c</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-1278f0d1-7444-40ee-9122-8cc340f9f543</ParentID>
+    <ReqID>REQ-5e74cb6b-aafe-485f-acdc-76eec5484356</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-1278f0d1-7444-40ee-9122-8cc340f9f543</ParentID>
+    <ReqID>REQ-b1a238e8-a4b4-40e6-b63c-4681ebab7a3b</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-98743581-5260-4125-b0c6-44c1fa3e24ad</ParentID>
+    <ReqID>REQ-ad6265b1-56b7-4eff-8b3e-b44662c22aef</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-98743581-5260-4125-b0c6-44c1fa3e24ad</ParentID>
+    <ReqID>REQ-8bfc84ec-925e-4402-a60a-9aef4f5b8040</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-98743581-5260-4125-b0c6-44c1fa3e24ad</ParentID>
+    <ReqID>REQ-d4e59b3c-bcd0-4922-8e6b-c4352cf9bd4c</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-98743581-5260-4125-b0c6-44c1fa3e24ad</ParentID>
+    <ReqID>REQ-b1a238e8-a4b4-40e6-b63c-4681ebab7a3b</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-98743581-5260-4125-b0c6-44c1fa3e24ad</ParentID>
+    <ReqID>REQ-5e74cb6b-aafe-485f-acdc-76eec5484356</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-98743581-5260-4125-b0c6-44c1fa3e24ad</ParentID>
+    <ReqID>REQ-7b6cdeac-94a7-4b64-a7ed-a2997915ac53</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-b2a6ae14-34ac-4fec-91cb-ac003a612514</ParentID>
+    <ReqID>REQ-8bfc84ec-925e-4402-a60a-9aef4f5b8040</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-b2a6ae14-34ac-4fec-91cb-ac003a612514</ParentID>
+    <ReqID>REQ-d4e59b3c-bcd0-4922-8e6b-c4352cf9bd4c</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-b2a6ae14-34ac-4fec-91cb-ac003a612514</ParentID>
+    <ReqID>REQ-b1a238e8-a4b4-40e6-b63c-4681ebab7a3b</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-b2a6ae14-34ac-4fec-91cb-ac003a612514</ParentID>
+    <ReqID>REQ-81fc2547-9f3e-418e-9b59-f2fd5c87b0f6</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-b2a6ae14-34ac-4fec-91cb-ac003a612514</ParentID>
+    <ReqID>REQ-98743581-5260-4125-b0c6-44c1fa3e24ad</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-b2a6ae14-34ac-4fec-91cb-ac003a612514</ParentID>
+    <ReqID>REQ-ad6265b1-56b7-4eff-8b3e-b44662c22aef</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-6c2cd233-9bd2-4b4f-b141-493cbd92cfa8</ParentID>
+    <ReqID>REQ-b2a6ae14-34ac-4fec-91cb-ac003a612514</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-6c2cd233-9bd2-4b4f-b141-493cbd92cfa8</ParentID>
+    <ReqID>REQ-98743581-5260-4125-b0c6-44c1fa3e24ad</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-51ac88c0-d97f-4976-ac90-681677b366a5</ParentID>
+    <ReqID>REQ-8bfc84ec-925e-4402-a60a-9aef4f5b8040</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-51ac88c0-d97f-4976-ac90-681677b366a5</ParentID>
+    <ReqID>REQ-d4e59b3c-bcd0-4922-8e6b-c4352cf9bd4c</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-51ac88c0-d97f-4976-ac90-681677b366a5</ParentID>
+    <ReqID>REQ-b1a238e8-a4b4-40e6-b63c-4681ebab7a3b</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-bf15e2fa-4b2c-4ba7-9b48-f4d39e635056</ParentID>
+    <ReqID>REQ-8bfc84ec-925e-4402-a60a-9aef4f5b8040</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-bf15e2fa-4b2c-4ba7-9b48-f4d39e635056</ParentID>
+    <ReqID>REQ-d4e59b3c-bcd0-4922-8e6b-c4352cf9bd4c</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-bf15e2fa-4b2c-4ba7-9b48-f4d39e635056</ParentID>
+    <ReqID>REQ-b1a238e8-a4b4-40e6-b63c-4681ebab7a3b</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-72bf9ca2-a426-4cc5-ae4c-2d8a56e6ef09</ParentID>
+    <ReqID>REQ-51ac88c0-d97f-4976-ac90-681677b366a5</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-b70170cc-0516-44ca-b04a-44e37c02eb25</ParentID>
+    <ReqID>REQ-51ac88c0-d97f-4976-ac90-681677b366a5</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-133ef2e8-8e43-4b31-89c8-1966fb5b69fe</ParentID>
+    <ReqID>REQ-51ac88c0-d97f-4976-ac90-681677b366a5</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-8b163f80-1a6c-484f-a208-f76f8c63b21c</ParentID>
+    <ReqID>REQ-ad6265b1-56b7-4eff-8b3e-b44662c22aef</ReqID>
+  </ReqReq>
+  <ReqReq>
+    <ParentID>REQ-71ef33b5-82dd-42f5-b615-3231b876b2e2</ParentID>
+    <ReqID>REQ-8b163f80-1a6c-484f-a208-f76f8c63b21c</ReqID>
+  </ReqReq>
   <DictionaryEntry>
     <UniqueID>D2-d36cc467-67a3-486c-a19a-6a259a497870</UniqueID>
     <Name>Gênero de Mídia</Name>
@@ -974,7 +1146,7 @@
 </RichDescription>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <UserID>DEF-2</UserID>
-    <Sequence>0</Sequence>
+    <Sequence>1</Sequence>
   </DictionaryEntry>
   <DictionaryEntry>
     <UniqueID>D2-562f4c46-dafe-421a-a21a-aed63b8eca3e</UniqueID>
@@ -987,11 +1159,11 @@
 </RichDescription>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <UserID>DEF-3</UserID>
-    <Sequence>1</Sequence>
+    <Sequence>2</Sequence>
   </DictionaryEntry>
   <DictionaryEntry>
     <UniqueID>D2-619720c1-24aa-4a29-bef6-7e78e709ed14</UniqueID>
-    <Name>Coelção de Mídias</Name>
+    <Name>Coleção de Mídias</Name>
     <Description>Grupo de mídias que possuem conteúdos intimamente relacionados, como séries de livros e filmes.</Description>
     <Aliases />
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
@@ -999,8 +1171,8 @@
 }
 </RichDescription>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
-    <UserID>DEF-4</UserID>
-    <Sequence>2</Sequence>
+    <UserID>DEF-1</UserID>
+    <Sequence>0</Sequence>
   </DictionaryEntry>
   <BuiltInField>
     <UniqueID>1</UniqueID>
@@ -1130,7 +1302,7 @@
     <Category>Details</Category>
     <Description>Who is responsible for this requirement?</Description>
     <DefaultValue />
-    <Choices />
+    <Choices>Bruno;Felipe;Lohan;Warley</Choices>
     <ChoicesExclusive>false</ChoicesExclusive>
     <Multiline>false</Multiline>
   </BuiltInField>
