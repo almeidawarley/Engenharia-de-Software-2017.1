@@ -35,7 +35,7 @@
       <boolean>false</boolean>
     </StoryViewSortOrder>
     <RequirementViewSortColumns>
-      <string>UserID</string>
+      <string>ReqType</string>
       <string />
       <string />
     </RequirementViewSortColumns>

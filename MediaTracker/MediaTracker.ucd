@@ -570,10 +570,10 @@
     <UserID>REQ-26</UserID>
     <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
     <Name>Página "Perfil"</Name>
-    <Description>O sistema deve permitir ao usuário acessar uma página de “Perfil” onde será exibida sua foto de perfil, assim como suas mídias consumidas separadas por tipo. Poderá nesta interface acessar uma lista “Seguidores” com os usuários que o seguem e outra “Seguindo” com os usuários que ele está seguindo. Poderá também editar sua foto assim como as mídias em exibição.</Description>
+    <Description>O sistema deve permitir ao usuário acessar uma página de “Perfil” onde será exibida sua foto de perfil, assim como suas mídias consumidas e de interesse separadas por tipo. Poderá nesta interface acessar uma lista “Seguidores” com os usuários que o seguem e outra “Seguindo” com os usuários que ele está seguindo. Poderá também editar sua foto assim como as mídias em exibição.</Description>
     <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
 {\colortbl ;\red0\green0\blue0;}
-\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio acessar uma p\'e1gina de \ldblquote Perfil\rdblquote  onde ser\'e1 exibida sua foto de perfil, assim como suas m\'eddias consumidas separadas por tipo. Poder\'e1 nesta interface acessar uma lista \ldblquote Seguidores\rdblquote  com os usu\'e1rios que o seguem e outra \ldblquote Seguindo\rdblquote  com os usu\'e1rios que ele est\'e1 seguindo. Poder\'e1 tamb\'e9m editar sua foto assim como as m\'eddias em exibi\'e7\'e3o.\par
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio acessar uma p\'e1gina de \ldblquote Perfil\rdblquote  onde ser\'e1 exibida sua foto de perfil, assim como suas m\'eddias consumidas e de interesse separadas por tipo. Poder\'e1 nesta interface acessar uma lista \ldblquote Seguidores\rdblquote  com os usu\'e1rios que o seguem e outra \ldblquote Seguindo\rdblquote  com os usu\'e1rios que ele est\'e1 seguindo. Poder\'e1 tamb\'e9m editar sua foto assim como as m\'eddias em exibi\'e7\'e3o.\par
 }
 </RichDescription>
     <Sequence>25</Sequence>
@@ -584,7 +584,7 @@
     <AssignedTo />
     <Release />
     <DateAdded>2017-04-02T20:09:00.2595134-03:00</DateAdded>
-    <DateModified>2017-04-02T20:14:32.0676048-03:00</DateModified>
+    <DateModified>2017-04-02T22:51:12.0356796-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
@@ -631,6 +631,204 @@
     <DateModified>2017-04-02T20:14:39.6020059-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
+  <Requirement>
+    <UniqueID>REQ-86f03520-eb66-4c79-a355-d9e8db607113</UniqueID>
+    <UserID>REQ-29</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Conexão a Internet</Name>
+    <Description>O sistema necessita de acesso a Internet para funcionar corretamente, visto que é uma aplicação cliente-servidor.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema necessita de acesso a Internet para funcionar corretamente, visto que \'e9 uma aplica\'e7\'e3o cliente-servidor.\par
+}
+</RichDescription>
+    <Sequence>28</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T22:10:04.3011808-03:00</DateAdded>
+    <DateModified>2017-04-02T22:15:51.5714155-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-0028a666-1291-4e82-b4f1-27e202ffa4f7</UniqueID>
+    <UserID>REQ-30</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Acesso a conteúdo adulto</Name>
+    <Description>O sistema deverá, por padrão, impedir que usuários visualizem conteúdo adulto, sendo permitido somente se devidamente configurado nas opções da conta.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema dever\'e1, por padr\'e3o, impedir que usu\'e1rios visualizem conte\'fado adulto, sendo permitido somente se devidamente configurado nas op\'e7\'f5es da conta.\par
+}
+</RichDescription>
+    <Sequence>29</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T22:15:14.7177495-03:00</DateAdded>
+    <DateModified>2017-04-02T22:16:18.9247944-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-fc7fa87d-dd86-438d-9e0d-81656600953e</UniqueID>
+    <UserID>REQ-31</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Implementação</Name>
+    <Description>O sistema deverá ser implementado utilizando o framework multiplataforma chamado Ionic, que faz uso de linguagens como JavaScript, TypeScript, CSS e HTML.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema dever\'e1 ser implementado utilizando o framework multiplataforma chamado Ionic, que faz uso de linguagens como JavaScript, TypeScript, CSS e HTML.\par
+}
+</RichDescription>
+    <Sequence>30</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T22:16:29.1293006-03:00</DateAdded>
+    <DateModified>2017-04-02T22:17:00.6579099-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-823c9fa5-a92d-45cc-be4c-3c9d11c80488</UniqueID>
+    <UserID>REQ-32</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Unicidade de apelido/email</Name>
+    <Description>O sistema deve garantir que o apelido e o e-mail cadastrados sejam únicos para cada usuário.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve garantir que o apelido e o e-mail cadastrados sejam \'fanicos para cada usu\'e1rio.\par
+}
+</RichDescription>
+    <Sequence>31</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T22:17:19.86909-03:00</DateAdded>
+    <DateModified>2017-04-02T22:17:30.3507484-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-ed0da4b8-e546-450f-81cd-320261d0725c</UniqueID>
+    <UserID>REQ-33</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Importação de outras bases</Name>
+    <Description>O sistema deve permitir ao usuário, durante sugestões de cadastro, importar informações dos seguintes sites: IMDb &lt;http://www.imdb.com/&gt; para filmes, episódios e participantes; MyAnimeList &lt;https://myanimelist.net/&gt; para animes e participantes; e LibraryThing &lt;https://www.librarything.com/&gt; para livros e participantes.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio, durante sugest\'f5es de cadastro, importar informa\'e7\'f5es dos seguintes sites: IMDb &lt;http://www.imdb.com/&gt; para filmes, epis\'f3dios e participantes; MyAnimeList &lt;https://myanimelist.net/&gt; para animes e participantes; e LibraryThing &lt;https://www.librarything.com/&gt; para livros e participantes.\par
+}
+</RichDescription>
+    <Sequence>32</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T22:22:44.2568104-03:00</DateAdded>
+    <DateModified>2017-04-02T22:38:54.1009916-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-e1bbaad0-5ca1-48bc-9a28-2ea48c2df8bc</UniqueID>
+    <UserID>REQ-34</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Página "Configurações"</Name>
+    <Description>O sistema deve permitir ao usuário acessar uma página de “Configurações” onde poderá alterar seus dados de e-mail e senha, trocar o esquema de cores e mudar a opção de notas (sendo as 3 opções de 0 a 10, de 0 a 100 e de uma a cinco estrelas).</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio acessar uma p\'e1gina de \ldblquote Configura\'e7\'f5es\rdblquote  onde poder\'e1 alterar seus dados de e-mail e senha, trocar o esquema de cores e mudar a op\'e7\'e3o de notas (sendo as 3 op\'e7\'f5es de 0 a 10, de 0 a 100 e de uma a cinco estrelas).\par
+}
+</RichDescription>
+    <Sequence>33</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T22:33:42.6476272-03:00</DateAdded>
+    <DateModified>2017-04-02T22:36:56.7770421-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-7050d834-d8f5-4a12-9ece-0a2357d7851c</UniqueID>
+    <UserID>REQ-35</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Página "Login"</Name>
+    <Description>O sistema deve possuir uma tela de login que permite ao usuário se conectar ao sistema utilizando e-mail e senha previamente cadastrados.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve possuir uma tela de login que permite ao usu\'e1rio se conectar ao sistema utilizando e-mail e senha previamente cadastrados.\par
+}
+</RichDescription>
+    <Sequence>34</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T22:34:41.6158623-03:00</DateAdded>
+    <DateModified>2017-04-02T22:36:52.9930351-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-e846a61f-b15f-4e19-ab7d-ddcb5501b949</UniqueID>
+    <UserID>REQ-36</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Filtro de sugestões</Name>
+    <Description>O sistema deverá filtrar sugestões de mídias com base nas que já estão cadastradas no sistema, notificando o usuário que enviou a sugestão.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema dever\'e1 filtrar sugest\'f5es de m\'eddias com base nas que j\'e1 est\'e3o cadastradas no sistema, notificando o usu\'e1rio que enviou a sugest\'e3o.\par
+}
+</RichDescription>
+    <Sequence>35</Sequence>
+    <Type>Non-functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T22:36:11.3999436-03:00</DateAdded>
+    <DateModified>2017-04-02T22:37:12.7210959-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-bf15e2fa-4b2c-4ba7-9b48-f4d39e635056</UniqueID>
+    <UserID>REQ-37</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Marcar interesse</Name>
+    <Description>O sistema deve permitir ao usuário marcar uma determinada mídia como interesse, contendo código da marcação, data, horário e mídia de interesse.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve permitir ao usu\'e1rio marcar uma determinada m\'eddia como interesse, contendo c\'f3digo da marca\'e7\'e3o, data, hor\'e1rio e m\'eddia de interesse.\par
+}
+</RichDescription>
+    <Sequence>36</Sequence>
+    <Type>Functional</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2017-04-02T22:50:27.0138052-03:00</DateAdded>
+    <DateModified>2017-04-02T22:50:49.2422863-03:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
   <UserID>
     <DefaultPrefix>UC-</DefaultPrefix>
     <NextValue>1</NextValue>
@@ -641,7 +839,7 @@
   </UserID>
   <UserID>
     <DefaultPrefix>REQ-</DefaultPrefix>
-    <NextValue>29</NextValue>
+    <NextValue>38</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>DEF-</DefaultPrefix>
