@@ -15,6 +15,38 @@
     <UniqueID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</UniqueID>
     <Name>MediaTracker</Name>
   </Package>
+  <Actor>
+    <UniqueID>A-fe292b23-81c8-4808-8ff9-828f971160a0</UniqueID>
+    <UserID>A-1</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Usuário</Name>
+    <Description>Ator que terá contato final com o sistema e utilizará de todas as funções desenvolvidas no mesmo.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Ator que ter\'e1 contato final com o sistema e utilizar\'e1 de todas as fun\'e7\'f5es desenvolvidas no mesmo.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <Complexity />
+    <DateAdded>2017-04-03T13:18:45.9857443-03:00</DateAdded>
+    <DateModified>2017-04-03T13:21:03.6699869-03:00</DateModified>
+  </Actor>
+  <Actor>
+    <UniqueID>A-5d0641a6-1ee0-4cb8-bc74-3d6c408ef20f</UniqueID>
+    <UserID>A-2</UserID>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <Name>Administrador</Name>
+    <Description>Ator encarregado de monitorar o bom funcionamento do sistema e realizar funções importantes do mesmo.
+</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Ator encarregado de monitorar o bom funcionamento do sistema e realizar fun\'e7\'f5es importantes do mesmo.\par
+\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <Complexity />
+    <DateAdded>2017-04-03T13:21:26.3846268-03:00</DateAdded>
+    <DateModified>2017-04-03T13:23:29.5452439-03:00</DateModified>
+  </Actor>
   <Requirement>
     <UniqueID>REQ-2b63ce8d-bc15-4446-94f0-9090ad28ec00</UniqueID>
     <UserID>REQ-1</UserID>
@@ -320,7 +352,7 @@
     <AssignedTo />
     <Release />
     <DateAdded>2017-04-02T14:11:50.9032623-03:00</DateAdded>
-    <DateModified>2017-04-02T19:59:32.1867001-03:00</DateModified>
+    <DateModified>2017-04-03T13:27:02.3642188-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
@@ -562,7 +594,7 @@
     <AssignedTo />
     <Release />
     <DateAdded>2017-04-02T20:08:20.9638763-03:00</DateAdded>
-    <DateModified>2017-04-02T20:14:27.1120939-03:00</DateModified>
+    <DateModified>2017-04-03T13:30:23.9149736-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
   <Requirement>
@@ -829,13 +861,95 @@
     <DateModified>2017-04-02T22:50:49.2422863-03:00</DateModified>
     <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
   </Requirement>
+  <Goal>
+    <UniqueID>G-e4292c91-51fb-449e-b0c6-afd9f36fbbc1</UniqueID>
+    <ParentID>A-fe292b23-81c8-4808-8ff9-828f971160a0</ParentID>
+    <Description>Aproveitar das funcionalidades do sistema.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Aproveitar das funcionalidades do sistema.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+  </Goal>
+  <Goal>
+    <UniqueID>G-29dd9643-69e3-4aaa-8d31-afb9c6786e97</UniqueID>
+    <ParentID>A-5d0641a6-1ee0-4cb8-bc74-3d6c408ef20f</ParentID>
+    <Description>Manter o sistema funcionando.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Manter o sistema funcionando.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+  </Goal>
+  <Goal>
+    <UniqueID>G-3a60c495-8c2d-43b3-92fb-10bde83328cc</UniqueID>
+    <ParentID>A-5d0641a6-1ee0-4cb8-bc74-3d6c408ef20f</ParentID>
+    <Description>Cadastrar novas mídias que sejam sugeridas pelos Usuários.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 Cadastrar novas m\'eddias que sejam sugeridas pelos \cf1\ul Usu\'e1rios\cf2\ulnone .\cf0\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+  </Goal>
+  <Goal>
+    <UniqueID>G-131b63da-565b-4056-ab0e-919a1383a2ef</UniqueID>
+    <ParentID>A-5d0641a6-1ee0-4cb8-bc74-3d6c408ef20f</ParentID>
+    <Description>Punir Usuários que não respeitem as regras do sistema.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 Punir \cf1\ul Usu\'e1rios\cf2\ulnone  que n\'e3o respeitem as regras do sistema.\cf0\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+  </Goal>
+  <OpenIssue>
+    <UniqueID>OI-caccf835-16d8-472c-903a-0d39d9c0ad4b</UniqueID>
+    <ParentID>REQ-f3ff64dc-3536-4082-9046-90169c20c1a4</ParentID>
+    <Description>O sistema deve pedir permissão aos Usuários para que possa utilizar os cookies de seu navegador.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\f0\fs20 O sistema deve pedir permiss\'e3o aos \cf2\ul Usu\'e1rios\cf1\ulnone  para que possa utilizar os cookies de seu navegador.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <AssignedTo />
+    <ResolveBy />
+    <DateResolved />
+    <Status>New</Status>
+    <Priority>High</Priority>
+    <Type>Question</Type>
+    <Complexity>Medium</Complexity>
+    <Risk>Low</Risk>
+    <ExternalReference />
+  </OpenIssue>
+  <OpenIssue>
+    <UniqueID>OI-5788b93c-b8e0-40cc-96ed-878bd5603c9d</UniqueID>
+    <ParentID>REQ-b70170cc-0516-44ca-b04a-44e37c02eb25</ParentID>
+    <Description>É necessário criar uma limitação nos comentários pra impedir que usuários façam "SPAM" de comentarios desnecessarios em uma mídia.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\f0\fs20\'c9 necess\'e1rio criar uma limita\'e7\'e3o nos coment\'e1rios pra impedir que \cf2\ul usu\'e1rios\cf1\ulnone  fa\'e7am "SPAM" de comentarios desnecessarios em uma m\'eddia.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <AssignedTo />
+    <ResolveBy />
+    <DateResolved />
+    <Status>New</Status>
+    <Priority>High</Priority>
+    <Type>Feature</Type>
+    <Complexity>Low</Complexity>
+    <Risk>Low</Risk>
+    <ExternalReference />
+  </OpenIssue>
   <UserID>
     <DefaultPrefix>UC-</DefaultPrefix>
     <NextValue>1</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>A-</DefaultPrefix>
-    <NextValue>1</NextValue>
+    <NextValue>3</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>REQ-</DefaultPrefix>
@@ -843,12 +957,51 @@
   </UserID>
   <UserID>
     <DefaultPrefix>DEF-</DefaultPrefix>
-    <NextValue>2</NextValue>
+    <NextValue>5</NextValue>
   </UserID>
   <UserID>
     <DefaultPrefix>S-</DefaultPrefix>
     <NextValue>1</NextValue>
   </UserID>
+  <DictionaryEntry>
+    <UniqueID>D2-d36cc467-67a3-486c-a19a-6a259a497870</UniqueID>
+    <Name>Gênero de Mídia</Name>
+    <Description>Também chamado de categoria, é o nome dado a um grupo de mídias que exibe um tipo especifico de conteúdo direcionado ou não a um público em específico. Por exemplo: Ação, Terror, Aventura, Infantil.</Description>
+    <Aliases />
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Tamb\'e9m chamado de categoria, \'e9 o nome dado a um grupo de m\'eddias que exibe um tipo especifico de conte\'fado direcionado ou n\'e3o a um p\'fablico em espec\'edfico. Por exemplo: A\'e7\'e3o, Terror, Aventura, Infantil.\par
+}
+</RichDescription>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <UserID>DEF-2</UserID>
+    <Sequence>0</Sequence>
+  </DictionaryEntry>
+  <DictionaryEntry>
+    <UniqueID>D2-562f4c46-dafe-421a-a21a-aed63b8eca3e</UniqueID>
+    <Name>Palavras-Chaves</Name>
+    <Description>Palavras que indicam uma característica do conteúdo a que está referenciando, também chamado de "Tag".</Description>
+    <Aliases />
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Palavras que indicam uma caracter\'edstica do conte\'fado a que est\'e1 referenciando, tamb\'e9m chamado de "Tag".\par
+}
+</RichDescription>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <UserID>DEF-3</UserID>
+    <Sequence>1</Sequence>
+  </DictionaryEntry>
+  <DictionaryEntry>
+    <UniqueID>D2-619720c1-24aa-4a29-bef6-7e78e709ed14</UniqueID>
+    <Name>Coelção de Mídias</Name>
+    <Description>Grupo de mídias que possuem conteúdos intimamente relacionados, como séries de livros e filmes.</Description>
+    <Aliases />
+    <RichDescription>{\rtf1\ansi\ansicpg1252\deff0\deflang1046{\fonttbl{\f0\fnil\fcharset0 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Grupo de m\'eddias que possuem conte\'fados intimamente relacionados, como s\'e9ries de livros e filmes.\par
+}
+</RichDescription>
+    <ParentID>P-fe7ffd77-e14b-4fb1-922e-d0e9a982b0e0</ParentID>
+    <UserID>DEF-4</UserID>
+    <Sequence>2</Sequence>
+  </DictionaryEntry>
   <BuiltInField>
     <UniqueID>1</UniqueID>
     <Name>Priority</Name>
