@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="menu-icon"></ion-icon>
+    </button>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div id="login_div" class="center item item-input" no-padding style="text-align: center;">
+
+    <form [formGroup]="loginForm">
+
+      <ion-item>
+        <ion-label floating>E-mail</ion-label>
+        <ion-input [class.invalid]="!loginForm.controls.loginEmail.valid && (loginForm.controls.loginEmail.dirty || !invalidForm)" type="text" formControlName="loginEmail"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Senha</ion-label>
+        <ion-input [class.invalid]="!loginForm.controls.loginPassword.valid && (loginForm.controls.loginPassword.dirty || !invalidForm)" type="password" formControlName="loginPassword"></ion-input>
+      </ion-item>
+
+      <br>
+
+      <button id="login_button" ion-button block (click)="login()">Entrar</button>
+
+      <br>
+
+      <a id="signup_button" (click)="signUp()">Criar conta</a>
+
+    </form>
+
+    <p *ngIf="showError" style="color: #ea6153;" >{{errorMessage}}</p>
+
+  </div>
+
+</ion-content>

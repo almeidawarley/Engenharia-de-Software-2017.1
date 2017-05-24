@@ -2,9 +2,9 @@ import {Component, ViewChild} from "@angular/core";
 import {Nav, Platform} from "ionic-angular";
 import {StatusBar} from "@ionic-native/status-bar";
 import {SplashScreen} from "@ionic-native/splash-screen";
-import {InicioPage} from "../pages/inicio/inicio";
-import {SobrePage} from "../pages/sobre/sobre";
-
+import {LoginPage} from "../pages/login/login";
+import {PerfilPage} from "../pages/perfil/perfil";
+import {Events} from 'ionic-angular';
 
 @Component({
   templateUrl: 'app.html'
@@ -12,11 +12,11 @@ import {SobrePage} from "../pages/sobre/sobre";
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage:any = InicioPage;
+  rootPage:any = PerfilPage;
 
   pages: Array<{title: string, icon: string, component: any}>;
 
-  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public events: Events) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -25,9 +25,20 @@ export class MyApp {
     });
 
     this.pages = [
-      { title: 'Início', icon: 'home', component: InicioPage },
-      { title: 'Sobre', icon: 'information-circle', component: SobrePage }
+      { title: 'Perfil', icon: 'person', component: PerfilPage }
     ];
+
+    events.subscribe('perfil:callLogin', () => {
+      this.nav.setRoot(LoginPage);
+    });
+
+    events.subscribe('user:loggedIn', () => {
+      this.nav.setRoot(PerfilPage);
+    });
+
+    events.subscribe('user:loggedOut', () => {
+      this.nav.setRoot(PerfilPage);
+    });
   }
 
   openPage(page) {
