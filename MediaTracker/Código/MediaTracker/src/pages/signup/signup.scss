@@ -1,0 +1,42 @@
+page-signup{
+	p {
+		font-size: 1em;
+		color: #d2d2d2;
+		margin-left: 10px;
+	}
+
+	ion-label, .select-text {
+		margin-left: 10px;
+	}
+
+	.invalid {
+		border-bottom: 1px solid #ea6153;
+	}
+
+	#signUp_button {
+  		margin-left: 10px;
+	};
+
+	#signUp_thumb {
+		margin-left: 20px;
+		width: 200px;
+		height: 200px;
+	}
+
+	#signUp_imageDiv {
+		position: relative;
+		width: 100%;
+		cursor: pointer;
+	};
+
+	h5 {
+		position: absolute;
+		top: 173px;
+		left: 0;
+		width: 100%;
+		color: white;
+		background: rgb(0, 0, 0);
+		background: rgba(0, 0, 0, 0.5);
+		padding: 5px;
+	}
+};

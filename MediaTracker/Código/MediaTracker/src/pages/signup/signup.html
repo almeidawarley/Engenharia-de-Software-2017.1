@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="menu-icon"></ion-icon>
+    </button>
+    <ion-title>
+      Cadastro
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div id="signUp_div" class="center item item-input" no-padding style="text-align: center;">
+
+    <form [formGroup]="signUpForm">
+
+      <div id="signUp_imageDiv" onclick="document.getElementById('signUp_fileInput').click();">
+        <h5><span>Selecionar foto</span></h5>
+        <ion-thumbnail id="signUp_thumb">
+          <img src="assets/person.png" #image>
+        </ion-thumbnail>
+        <input type="file" id="signUp_fileInput" accept="image/png,image/gif,image/jpeg" (change)="imageUploaded($event)" style="display: none;" #input>
+      </div>
+
+      <ion-item>
+        <ion-label floating>Apelido</ion-label>
+        <ion-input [class.invalid]="!signUpForm.controls.signUpApelido.valid && (signUpForm.controls.signUpApelido.dirty || !invalidForm)" type="text" formControlName="signUpApelido"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Nome</ion-label>
+        <ion-input [class.invalid]="!signUpForm.controls.signUpNome.valid && (signUpForm.controls.signUpNome.dirty || !invalidForm)" type="text" formControlName="signUpNome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Senha</ion-label>
+        <ion-input [class.invalid]="!signUpForm.controls.signUpPassword.valid && (signUpForm.controls.signUpPassword.dirty || !invalidForm)" type="password" formControlName="signUpPassword"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>E-mail</ion-label>
+        <ion-input [class.invalid]="!signUpForm.controls.signUpEmail.valid && (signUpForm.controls.signUpEmail.dirty || !invalidForm)" type="text" formControlName="signUpEmail"></ion-input>
+      </ion-item>
+
+      <br>
+
+      <ion-list radio-group formControlName="signUpSex">
+        <ion-label>Sexo</ion-label>
+
+        <ion-item>
+          <ion-label>Masculino</ion-label>
+          <ion-radio value="Masculino"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Feminino</ion-label>
+          <ion-radio value="Feminino"></ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <br>
+
+      <ion-item>
+        <ion-label>Data de nascimento</ion-label>
+        <ion-datetime displayFormat="DD/MM/YYYY" pickerFormat="DD/MM/YYYY" formControlName="signUpDate"></ion-datetime>
+      </ion-item>
+
+      <br>
+
+      <button id="signUp_button" ion-button block (click)="signUp()">Cadastrar</button>
+
+      <br>
+
+      <a id="login_button" (click)="callLoginPage()">Fazer login</a>
+
+    </form>
+
+    <p *ngIf="showError" style="color: #ea6153;" >{{errorMessage}}</p>
+
+  </div>
+
+</ion-content>

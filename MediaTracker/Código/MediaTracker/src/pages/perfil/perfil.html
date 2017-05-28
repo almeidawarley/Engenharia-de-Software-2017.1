@@ -9,8 +9,26 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <div id="perfil_div" class="center item item-input" no-padding>
+<ion-content padding *ngIf="isLoaded">
+  <div id="perfil_div" class="center item item-input" no-padding style="text-align: center;">
+
+    <div id="perfil_imageDiv">
+      <h5><span>{{perfilApelido}}</span></h5>
+      <ion-thumbnail id="perfil_thumb">
+        <img src="{{perfilImage}}">
+      </ion-thumbnail>
+    </div>
+
+    <br>
+
+    <h4>{{perfilNome}}</h4>
+    <h4>{{perfilEmail}}</h4>
+
+    <br>
+
+    <h4>{{perfilSexo}}</h4>
+    <h4>{{perfilData}}</h4>
+
     <button id="perfil_sair" center ion-button (click)="logout()">Sair</button>
   </div>
 </ion-content>

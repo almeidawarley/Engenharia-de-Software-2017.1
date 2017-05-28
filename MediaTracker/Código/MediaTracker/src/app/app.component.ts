@@ -2,8 +2,9 @@ import {Component, ViewChild} from "@angular/core";
 import {Nav, Platform} from "ionic-angular";
 import {StatusBar} from "@ionic-native/status-bar";
 import {SplashScreen} from "@ionic-native/splash-screen";
-import {LoginPage} from "../pages/login/login";
+import {HomePage} from "../pages/home/home";
 import {PerfilPage} from "../pages/perfil/perfil";
+import {SignUpPage} from "../pages/signup/signup";
 import {Events} from 'ionic-angular';
 
 @Component({
@@ -12,7 +13,7 @@ import {Events} from 'ionic-angular';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage:any = PerfilPage;
+  rootPage:any = HomePage;
 
   pages: Array<{title: string, icon: string, component: any}>;
 
@@ -28,15 +29,15 @@ export class MyApp {
       { title: 'Perfil', icon: 'person', component: PerfilPage }
     ];
 
-    events.subscribe('perfil:callLogin', () => {
-      this.nav.setRoot(LoginPage);
+    events.subscribe('callHomePage', () => {
+      this.nav.setRoot(HomePage);
     });
 
-    events.subscribe('user:loggedIn', () => {
-      this.nav.setRoot(PerfilPage);
+    events.subscribe('callSignUpPage', () => {
+      this.nav.setRoot(SignUpPage);
     });
 
-    events.subscribe('user:loggedOut', () => {
+    events.subscribe('callPerfilPage', () => {
       this.nav.setRoot(PerfilPage);
     });
   }
