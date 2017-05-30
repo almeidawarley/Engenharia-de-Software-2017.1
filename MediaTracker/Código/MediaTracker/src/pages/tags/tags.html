@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="menu-icon"></ion-icon>
+    </button>
+    <ion-title>
+      Cadastro de palavra-chave
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div id="tags_div" class="center item item-input" no-padding style="text-align: center;">
+
+    <ion-list>
+      <ion-item *ngFor="let item of items | async">
+        <h2>{{item.nome}}</h2>
+        <h5>{{item.descricao}}</h5>
+      </ion-item>
+    </ion-list>
+
+    <form [formGroup]="tagsForm">
+
+      <ion-item>
+        <ion-label floating>Nome</ion-label>
+        <ion-input [class.invalid]="!tagsForm.controls.tagNome.valid && (tagsForm.controls.tagNome.dirty || !invalidForm)" type="text" formControlName="tagNome"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Descrição</ion-label>
+        <ion-textarea style="resize: none;" [class.invalid]="!tagsForm.controls.tagDescricao.valid && (tagsForm.controls.tagDescricao.dirty || !invalidForm)" type="text" formControlName="tagDescricao"></ion-textarea>
+      </ion-item>
+
+      <br>
+
+      <button id="tags_button" ion-button block (click)="submit()">Enviar</button>
+
+    </form>
+
+    <p *ngIf="showError" style="color: #ea6153;" >{{errorMessage}}</p>
+
+  </div>
+
+</ion-content>
