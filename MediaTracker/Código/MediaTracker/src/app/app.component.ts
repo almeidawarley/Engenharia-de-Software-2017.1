@@ -5,7 +5,9 @@ import {SplashScreen} from "@ionic-native/splash-screen";
 import {HomePage} from "../pages/home/home";
 import {PerfilPage} from "../pages/perfil/perfil";
 import {SignUpPage} from "../pages/signup/signup";
+import {GeneroPage} from "../pages/genero/genero";
 import {TagsPage} from "../pages/tags/tags";
+import {LivroPage} from "../pages/livro/livro";
 import {Events} from 'ionic-angular';
 
 @Component({
@@ -28,7 +30,9 @@ export class MyApp {
 
     this.pages = [
       { title: 'Perfil', icon: 'person', component: PerfilPage },
-      { title: 'Tags', icon: 'person', component: TagsPage }
+      { title: 'Tags', icon: 'pricetag', component: TagsPage },
+      { title: 'Generos', icon: 'film', component: GeneroPage},
+      { title: 'Livros', icon: 'book', component: LivroPage}
     ];
 
     events.subscribe('callHomePage', () => {

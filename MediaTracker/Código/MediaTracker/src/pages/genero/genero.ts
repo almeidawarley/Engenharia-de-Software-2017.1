@@ -1,42 +1,43 @@
 import {Component} from "@angular/core";
 import {NavController} from "ionic-angular";
 import {Events} from 'ionic-angular';
+import { LoadingController } from 'ionic-angular';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { LoadingController } from 'ionic-angular';
-
+import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
-  selector: 'page-tags',
-  templateUrl: 'tags.html'
+  selector: 'page-genero',
+  templateUrl: 'genero.html'
 })
-export class TagsPage {
+export class GeneroPage {
 
-  tagsForm: FormGroup;
+  generoForm: FormGroup;
 
   showError: boolean = false;
   errorMessage: string;
 
   loading: any;
 
+  showSubmited: boolean = true;
+
   items: FirebaseListObservable<any>;
   currentlyItem : any;
   showCurrentlyItem: boolean = false;
-  showSubmited: boolean = true;
 
-  constructor(public navCtrl: NavController, public events: Events, public formBuilder: FormBuilder,
-               public loadingCtrl: LoadingController, public afDb: AngularFireDatabase) {
-    this.tagsForm = formBuilder.group({
-      tagNome: ['', Validators.compose([Validators.minLength(3), Validators.required])],
-      tagDescricao: ['', Validators.compose([Validators.minLength(6), Validators.required])],
+  constructor(public navCtrl: NavController, public events: Events, public afAuth: AngularFireAuth,
+               public formBuilder: FormBuilder, public loadingCtrl: LoadingController, public afDb: AngularFireDatabase) {
+    this.generoForm = formBuilder.group({
+      generoNome: ['', Validators.compose([Validators.minLength(3), Validators.required])],
+      generoDescricao: ['', Validators.compose([Validators.minLength(6), Validators.required])]
     });
-    this.items = afDb.list('/tags');
+    this.items = this.afDb.list('/generos/');
   }
 
   validate() {
-    if (this.tagsForm.valid) {
+    if (this.generoForm.valid) {
       this.showError = false;
       return true;
     } else {
@@ -48,34 +49,22 @@ export class TagsPage {
 
   submit() {
     if (this.validate()) {
-      let nome = this.tagsForm.controls.tagNome.value;
-      let descricao = this.tagsForm.controls.tagDescricao.value;
+      let nome = this.generoForm.controls.generoNome.value;
+      let descricao = this.generoForm.controls.generoDescricao.value;
 
       this.showLoading();
-
+      let codigo = nome.substring(0, 3).toUpperCase();
       let self = this;
-
-      let codigo = nome.substring(0, 3).toUpperCase() + descricao.substring(descricao.length/3, descricao.length/2).toUpperCase().replace(' ', '6');
-
-      let ref = this.afDb.object('/tags/' + codigo);
+      let ref = self.afDb.object('/generos/' + codigo);
       ref.set({codigo: codigo, nome: nome, descricao: descricao})
       .then(function() {
+        self.hideLoading();
+        self.showSubmited = true;
+      }).catch(function(error) {
         self.showSubmited = true;
         self.hideLoading();
       });
     }
-  }
-
-  showLoading() {
-    this.loading = this.loadingCtrl.create({
-      spinner: 'crescent',
-      content: 'Aguarde...'
-    });
-    this.loading.present();
-  }
-
-  hideLoading() {
-    this.loading.dismiss();
   }
 
   callRegisterPage(){
@@ -88,6 +77,18 @@ export class TagsPage {
 
   callHomePage() {
     this.events.publish('callPerfilPage');
+  }
+
+  showLoading() {
+    this.loading = this.loadingCtrl.create({
+      spinner: 'crescent',
+      content: 'Aguarde...'
+    });
+    this.loading.present();
+  }
+
+  hideLoading() {
+    this.loading.dismiss();
   }
 
   selectItem(item){
@@ -107,5 +108,4 @@ export class TagsPage {
       return false;
     }
   }
-
 }

@@ -1,0 +1,19 @@
+page-genero{
+	.vertical-align-content > *{
+     display: flex!important;
+     align-content: center!important;
+     align-items: center!important;
+	}
+
+	.highlight{
+		font-weight: bold;
+  		color: #387ef5;
+	}
+	.text{
+	    text-align: justify;
+	    text-justify: inter-word;
+	}
+	.no-overlap{
+		height: 75%;
+	}
+};

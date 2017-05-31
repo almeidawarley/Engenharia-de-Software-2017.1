@@ -4,33 +4,32 @@
       <ion-icon name="menu" class="menu-icon"></ion-icon>
     </button>
     <ion-title>
-      Cadastro de palavra-chave
+      Cadastro de gêneros
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
 
-  <div *ngIf="!showSubmited" id="tags_div" class="center item item-input no-overlap" no-padding style="text-align: center;">
+<ion-content>
+  <div *ngIf="!showSubmited" id="genero_div" class="center item item-input no-overlap" style="text-align: center;">
 
-    <form [formGroup]="tagsForm">
+    <form [formGroup]="generoForm">
 
       <ion-item>
         <ion-label floating>Nome</ion-label>
-        <ion-input [class.invalid]="!tagsForm.controls.tagNome.valid && (tagsForm.controls.tagNome.dirty || !invalidForm)" type="text" formControlName="tagNome"></ion-input>
+        <ion-input [class.invalid]="!generoForm.controls.generoNome.valid && (generoForm.controls.generoNome.dirty || !invalidForm)" type="text" formControlName="generoNome"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label floating>Descrição</ion-label>
-        <ion-textarea style="resize: none;" [class.invalid]="!tagsForm.controls.tagDescricao.valid && (tagsForm.controls.tagDescricao.dirty || !invalidForm)" type="text" formControlName="tagDescricao"></ion-textarea>
+        <ion-textarea [class.invalid]="!generoForm.controls.generoDescricao.valid && (generoForm.controls.generoDescricao.dirty || !invalidForm)" type="text" formControlName="generoDescricao"></ion-textarea>
       </ion-item>
 
       <br>
 
-      <button id="tags_button" ion-button block (click)="submit()">Enviar</button>
+      <button id="genero_button" ion-button block (click)="submit()">Enviar</button>
 
     </form>
-
     <p *ngIf="showError" style="color: #ea6153;" >{{errorMessage}}</p>
     <br>
     <a id="submited_button" (click)="callSubmitedPage()">Ir para registros</a>
@@ -43,7 +42,7 @@
     <ion-col>
     <ion-list>
     <ion-list-header>
-      <h1>Tags cadastradas</h1>
+      <h1> Gêneros cadastrados</h1>
     </ion-list-header>
       <button ion-item *ngFor="let item of items | async" (click) = "selectItem(item)">
         <h2 *ngIf="isSelected(item)" class="highlight">{{item.nome}}</h2>
@@ -56,10 +55,9 @@
       <p class = "text">{{currentlyItem.descricao}}</p>
     </ion-col>
     </ion-row>
-    <button id="tags_button" ion-button block (click)="callRegisterPage()">Cadastrar nova tag</button>
+    <button id="genero_button" ion-button block (click)="callRegisterPage()">Cadastrar novo gênero</button>
     <br>
     <a id="submited_button" (click)="callHomePage()">Ir para página inicial</a>
     </ion-grid>
   </div>
-
 </ion-content>

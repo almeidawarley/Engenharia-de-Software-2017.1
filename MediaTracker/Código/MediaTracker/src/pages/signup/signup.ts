@@ -60,7 +60,7 @@ export class SignUpPage {
       let email = this.signUpForm.controls.signUpEmail.value;
       let sexo = this.signUpForm.controls.signUpSex.value;
       let data = this.signUpForm.controls.signUpDate.value;
-      let image = this.imageEncoded
+      let image = this.imageEncoded;
 
       this.showLoading();
 
