@@ -5,7 +5,6 @@ import { LoadingController } from 'ionic-angular';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
-import { AngularFireAuth } from 'angularfire2/auth';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
@@ -27,8 +26,8 @@ export class GeneroPage {
   currentlyItem : any;
   showCurrentlyItem: boolean = false;
 
-  constructor(public navCtrl: NavController, public events: Events, public afAuth: AngularFireAuth,
-               public formBuilder: FormBuilder, public loadingCtrl: LoadingController, public afDb: AngularFireDatabase) {
+  constructor(public navCtrl: NavController, public events: Events, public formBuilder: FormBuilder,
+                 public loadingCtrl: LoadingController, public afDb: AngularFireDatabase) {
     this.generoForm = formBuilder.group({
       generoNome: ['', Validators.compose([Validators.minLength(3), Validators.required])],
       generoDescricao: ['', Validators.compose([Validators.minLength(6), Validators.required])]

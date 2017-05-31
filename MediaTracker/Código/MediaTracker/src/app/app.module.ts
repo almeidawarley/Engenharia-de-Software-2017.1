@@ -11,6 +11,8 @@ import {SignUpPage} from "../pages/signup/signup";
 import {GeneroPage} from "../pages/genero/genero";
 import {TagsPage} from "../pages/tags/tags";
 import {LivroPage} from "../pages/livro/livro";
+import {EpisodioPage} from "../pages/episodio/episodio";
+import {FilmePage} from "../pages/filme/filme";
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -33,7 +35,9 @@ const firebaseConfig = {
     PerfilPage,
     TagsPage,
     GeneroPage,
-    LivroPage
+    LivroPage,
+    EpisodioPage,
+    FilmePage
   ],
   imports: [
     BrowserModule,
@@ -50,7 +54,9 @@ const firebaseConfig = {
     PerfilPage,
     TagsPage, 
     GeneroPage,
-    LivroPage
+    LivroPage, 
+    EpisodioPage,
+    FilmePage
   ],
   providers: [
     StatusBar,

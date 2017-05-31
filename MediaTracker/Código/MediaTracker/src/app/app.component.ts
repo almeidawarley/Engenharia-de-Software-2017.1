@@ -8,6 +8,8 @@ import {SignUpPage} from "../pages/signup/signup";
 import {GeneroPage} from "../pages/genero/genero";
 import {TagsPage} from "../pages/tags/tags";
 import {LivroPage} from "../pages/livro/livro";
+import {EpisodioPage} from "../pages/episodio/episodio";
+import {FilmePage} from "../pages/filme/filme";
 import {Events} from 'ionic-angular';
 
 @Component({
@@ -32,7 +34,9 @@ export class MyApp {
       { title: 'Perfil', icon: 'person', component: PerfilPage },
       { title: 'Tags', icon: 'pricetag', component: TagsPage },
       { title: 'Generos', icon: 'film', component: GeneroPage},
-      { title: 'Livros', icon: 'book', component: LivroPage}
+      { title: 'Livros', icon: 'book', component: LivroPage},
+      { title: 'Episódios', icon: 'videocam', component: EpisodioPage},      
+      { title: 'Filmes', icon: 'film', component: FilmePage}
     ];
 
     events.subscribe('callHomePage', () => {

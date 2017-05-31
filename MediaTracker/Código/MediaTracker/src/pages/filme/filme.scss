@@ -1,4 +1,4 @@
-page-livro{
+page-filme{
 	.vertical-align-content > *{
      display: flex!important;
      align-content: center!important;
@@ -15,7 +15,6 @@ page-livro{
 	}
 	.no-overlap{
 		height: 75%;
-		display:block;
 	}
 
 	p {
@@ -32,13 +31,13 @@ page-livro{
 		border-bottom: 1px solid #ea6153;
 	}
 
-	#livro_thumb {
+	#filme_thumb {
 		margin-left: 20px;
 		width: 200px;
 		height: 200px;
 	}
 
-	#livro_imageDiv {
+	#filme_imageDiv {
 		position: relative;
 		width: 100%;
 		cursor: pointer;

@@ -55,7 +55,7 @@ export class TagsPage {
 
       let self = this;
 
-      let codigo = nome.substring(0, 3).toUpperCase() + descricao.substring(descricao.length/3, descricao.length/2).toUpperCase().replace(' ', '6');
+      let codigo = nome.substring(0, 3).toUpperCase() + descricao.substring(descricao.length/3, descricao.length/2).toUpperCase().substring(0, 3).replace(' ', '6');
 
       let ref = this.afDb.object('/tags/' + codigo);
       ref.set({codigo: codigo, nome: nome, descricao: descricao})

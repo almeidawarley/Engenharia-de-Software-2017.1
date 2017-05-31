@@ -1,24 +1,21 @@
 page-tags{
-  p {
-    font-size: 1em;
-    color: #d2d2d2;
-    margin-left: 10px;
+
+  .vertical-align-content > *{
+     display: flex!important;
+     align-content: center!important;
+     align-items: center!important;
   }
 
-  ion-label, .select-text {
-    margin-left: 10px;
+  .highlight{
+    font-weight: bold;
+      color: #387ef5;
   }
-
-  .invalid {
-    border-bottom: 1px solid #ea6153;
+  .text{
+      text-align: justify;
+      text-justify: inter-word;
   }
-
   .no-overlap{
     height: 75%;
   }
-  
-  #tags_button {
-      margin-left: 10px;
-  };
 
 };

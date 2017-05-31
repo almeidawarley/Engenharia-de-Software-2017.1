@@ -4,49 +4,50 @@
       <ion-icon name="menu" class="menu-icon"></ion-icon>
     </button>
     <ion-title>
-      Cadastro de livros
+      Cadastro de filme
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content *ngIf="!showSubmited" >
-
-  <div id="livro_div" class="center item item-input" style="text-align: center;">
+  <div id="filme_div" class="center item item-input" style="text-align: center;">
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-    <div id="livro_imageDiv" onclick="document.getElementById('livro_fileInput').click();">
+    <div id="filme_imageDiv" onclick="document.getElementById('filme_fileInput').click();">
         <h5><span>Selecionar imagem</span></h5>
-        <ion-thumbnail id="livro_thumb">
+        <ion-thumbnail id="filme_thumb">
           <img src="assets/person.png" #image>
         </ion-thumbnail>
-        <input type="file" id="livro_fileInput" accept="image/png,image/gif,image/jpeg" (change)="imageUploaded($event)" style="display: none;" #input>
+        <input type="file" id="filme_fileInput" accept="image/png,image/gif,image/jpeg" (change)="imageUploaded($event)" style="display: none;" #input>
       </div>
-    <form [formGroup]="livroForm">
+    <form [formGroup]="filmeForm">
 
       <ion-item>
         <ion-label floating>Título</ion-label>
-        <ion-input [class.invalid]="!livroForm.controls.livroTitulo.valid && (livroForm.controls.livroTitulo.dirty || !invalidForm)" type="text" formControlName="livroTitulo"></ion-input>
+        <ion-input [class.invalid]="!filmeForm.controls.filmeTitulo.valid && (filmeForm.controls.filmeTitulo.dirty || !invalidForm)" type="text" formControlName="filmeTitulo"></ion-input>
       </ion-item>
 
       <ion-item>
         <ion-label floating>Sinopse</ion-label>
-        <ion-textarea [class.invalid]="!livroForm.controls.livroSinopse.valid && (livroForm.controls.livroSinopse.dirty || !invalidForm)" type="text" formControlName="livroSinopse"></ion-textarea>
+        <ion-textarea [class.invalid]="!filmeForm.controls.filmeSinopse.valid && (filmeForm.controls.filmeSinopse.dirty || !invalidForm)" type="text" formControlName="filmeSinopse"></ion-textarea>
       </ion-item>
 
       <ion-item>
-        <ion-label floating>Idioma</ion-label>
-        <ion-select [class.invalid]="!livroForm.controls.livroIdioma.valid && (livroForm.controls.livroIdioma.dirty || !invalidForm)" type="text" formControlName="livroIdioma">
-        <ion-option value="Inglês">Inglês</ion-option>
-        <ion-option value="Português">Português</ion-option>
-        <ion-option value="Espanhol">Espanhol</ion-option>
-        </ion-select>
+        <ion-label floating>Duração</ion-label>
+        <ion-input [class.invalid]="!filmeForm.controls.filmeDuracao.valid && (filmeForm.controls.filmeDuracao.dirty || !invalidForm)" min="0" type="number" formControlName="filmeDuracao">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Ano de lançamento</ion-label>
+        <ion-datetime displayFormat="YYYY" pickerFormat="YYYY" formControlName="filmeAno"></ion-datetime>
       </ion-item>
 
       <ion-item>
         <ion-label floating>Gêneros</ion-label>
-        <ion-select [class.invalid]="!livroForm.controls.livroGeneros.valid && (livroForm.controls.livroGeneros.dirty || !invalidForm)" multiple="true" type="text" formControlName="livroGeneros">
+        <ion-select [class.invalid]="!filmeForm.controls.filmeGeneros.valid && (filmeForm.controls.filmeGeneros.dirty || !invalidForm)" multiple="true" type="text" formControlName="filmeGeneros">
         <ion-option *ngFor = "let genero of generos | async " value = "{{genero.codigo}}">
           {{genero.nome}}
         </ion-option>
@@ -55,22 +56,16 @@
 
       <ion-item>
         <ion-label floating>Tags</ion-label>
-        <ion-select [class.invalid]="!livroForm.controls.livroTags.valid && (livroForm.controls.livroTags.dirty || !invalidForm)" multiple="true" type="text" formControlName="livroTags">
+        <ion-select [class.invalid]="!filmeForm.controls.filmeTags.valid && (filmeForm.controls.filmeTags.dirty || !invalidForm)" multiple="true" type="text" formControlName="filmeTags">
         <ion-option *ngFor = "let tag of tags | async " value = "{{tag.codigo}}">
           {{tag.nome}}
         </ion-option>
         </ion-select>
-      </ion-item>
-
-      <ion-item>
-        <ion-label floating>ISBN</ion-label>
-        <ion-input [class.invalid]="!livroForm.controls.livroISBN.valid && (livroForm.controls.livroISBN.dirty || !invalidForm)" type="text" formControlName="livroISBN">
-        </ion-input>
-      </ion-item>       
+      </ion-item>      
 
       <br>    
 
-      <button id="livro_button" ion-button block (click)="submit()">Enviar</button>
+      <button id="filme_button" ion-button block (click)="submit()">Enviar</button>
 
     </form>
     <p *ngIf="showError" style="color: #ea6153;" >{{errorMessage}}</p>
@@ -87,7 +82,7 @@
     <ion-col>
     <ion-list>
     <ion-list-header>
-      <h1> Livros cadastrados</h1>
+      <h1> Filmes cadastrados</h1>
     </ion-list-header>
       <button ion-item *ngFor="let item of items | async" (click) = "selectItem(item)">
         <h2 *ngIf="isSelected(item)" class="highlight">{{item.titulo}}</h2>
@@ -98,8 +93,8 @@
     </ion-row>
     <ion-row>
     <ion-col *ngIf="showCurrentlyItem">
-      <div id="livro_imageDiv">
-        <ion-thumbnail id="livro_thumb">
+      <div id="filme_imageDiv">
+        <ion-thumbnail id="filme_thumb">
           <img src="{{currentlyItem.image}}">
         </ion-thumbnail>
       </div>
@@ -108,8 +103,8 @@
     <ion-list>
     <ion-list-header> {{currentlyItem.titulo}} </ion-list-header>
       <p> Sinopse: {{currentlyItem.sinopse}}</p>
-      <ion-item> Idioma: {{currentlyItem.idioma}}</ion-item>
-      <ion-item> ISBN: {{currentlyItem.isbn}} </ion-item>
+      <ion-item> Duração: {{currentlyItem.duracao}} minutos</ion-item>
+      <ion-item> Ano de exibição: {{currentlyItem.ano}} </ion-item>
       <ion-item> Gênero:  <span *ngFor="let g of listaGeneros"> {{lookForGenero(g)}}</span></ion-item>
       <ion-item> Tags:  <span *ngFor="let t of listaTags"> {{lookForTag(t)}} </span></ion-item>
       <ion-item> Nota:  {{lookForMedia()}}</ion-item>
@@ -118,7 +113,7 @@
     </ion-row>
     </ion-grid>
     <br><br><br><br>
-    <button id="livro_button" ion-button block (click)="callRegisterPage()">Cadastrar novo livro</button>
+    <button id="filme_button" ion-button block (click)="callRegisterPage()">Cadastrar novo filme</button>
     <br>
     <a id="submited_button" (click)="callHomePage()">Ir para página inicial</a>
   </div>

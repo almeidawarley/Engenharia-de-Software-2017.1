@@ -11,14 +11,17 @@
 
 <ion-content padding *ngIf="isLoaded">
   <div id="perfil_div" class="center item item-input" no-padding style="text-align: center;">
-
+    <ion-grid>
+    <ion-row>
+    <ion-col col-6>
     <div id="perfil_imageDiv">
       <h5><span>{{perfilApelido}}</span></h5>
       <ion-thumbnail id="perfil_thumb">
         <img src="{{perfilImage}}">
       </ion-thumbnail>
     </div>
-
+    </ion-col>
+    <ion-col col-6>
     <br>
 
     <h4>{{perfilNome}}</h4>
@@ -30,5 +33,8 @@
     <h4>{{perfilData}}</h4>
 
     <button id="perfil_sair" center ion-button (click)="logout()">Sair</button>
+    </ion-col>
+    </ion-row>
+    </ion-grid>
   </div>
 </ion-content>

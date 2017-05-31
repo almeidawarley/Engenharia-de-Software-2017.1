@@ -1,45 +1,62 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu" class="menu-icon"></ion-icon>
-    </button>
-    <ion-title>
-      MediaTracker
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding class = "no-overlap">
-  <div id="home_intro" class="item" no-padding style="text-align: center;">
 
-    <h1>Bem vindo ao MediaTracker! Blablabla...</h1>
 
-  </div>
-  <div id="login_div" class="center item item-input" no-padding style="text-align: center;">
+<ion-content class="background-image home">
 
-    <form [formGroup]="loginForm">
+  <ion-grid>
 
-      <ion-item>
-        <ion-label floating>E-mail</ion-label>
-        <ion-input [class.invalid]="!loginForm.controls.loginEmail.valid && (loginForm.controls.loginEmail.dirty || !invalidForm)" type="text" formControlName="loginEmail"></ion-input>
-      </ion-item>
+    <ion-row justify-content-center align-items-center>
 
-      <ion-item>
-        <ion-label floating>Senha</ion-label>
-        <ion-input [class.invalid]="!loginForm.controls.loginPassword.valid && (loginForm.controls.loginPassword.dirty || !invalidForm)" type="password" formControlName="loginPassword"></ion-input>
-      </ion-item>
 
-      <br>
+      <ion-col col-11 col-lg offset-lg-1>
 
-      <button id="login_button" ion-button block (click)="login()">Entrar</button>
+          <div class="moduleText">
+          <div id="home_intro" class="item " no-padding style="text-align: center;">
+            <header>
+            <h1>MediaTracker</h1>
+            </header>
+            <p>Trabalho desenvolvido para a disciplina de Engenharia de Software</p>
+            <p>UFJF 2017/1</p>
 
-      <br>
+          </div>
+          </div>
+          
+      </ion-col>
 
-      <a id="signUp_button" (click)="callSignUpPage()">Criar conta</a>
+      <ion-col col-11 col-lg>
+        <div class="module">
 
-    </form>
+        <div id="login_div" class=" module center item item-input" no-padding style="text-align: center;">
 
-    <p *ngIf="showError" style="color: #ea6153;" >{{errorMessage}}</p>
+          <form [formGroup]="loginForm">
 
-  </div>
+            <ion-item>
+              <ion-label floating>E-mail</ion-label>
+              <ion-input [class.invalid]="!loginForm.controls.loginEmail.valid && (loginForm.controls.loginEmail.dirty || !invalidForm)" type="text" formControlName="loginEmail"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label floating>Senha</ion-label>
+              <ion-input [class.invalid]="!loginForm.controls.loginPassword.valid && (loginForm.controls.loginPassword.dirty || !invalidForm)" type="password" formControlName="loginPassword"></ion-input>
+            </ion-item>
+
+            <br>
+
+            <button id="login_button" ion-button block (click)="login()">Entrar</button>
+
+            <br>
+
+            <a id="signUp_button" (click)="callSignUpPage()">Criar conta</a>
+            <br><br>
+          </form>
+
+          <p *ngIf="showError" style="color: #ea6153;" >{{errorMessage}}</p>
+
+          </div>
+
+        </div>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
 </ion-content>

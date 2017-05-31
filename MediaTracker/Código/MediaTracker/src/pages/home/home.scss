@@ -1,7 +1,14 @@
 page-home{
 	p {
-		font-size: 1em;
-		color: #d2d2d2;
+		font-size: 1.5em;
+		color: black;
+		margin-left: 10px;
+
+	}
+
+	h1{
+		font-size: 4em;
+		color: black;
 		margin-left: 10px;
 	}
 
@@ -9,15 +16,83 @@ page-home{
 		margin-left: 10px;
 	}
 
+
+
+
+
 	.invalid {
 		border-bottom: 1px solid #ea6153;
-	}
-
-	.no-overlap{
-		height: 75%;
 	}
 
 	#login_button {
   		margin-left: 10px;
 	};
+	
+
+	.background-image{
+		background: 
+		linear-gradient(
+	    rgba(0, 0, 0, 0.5),
+	    rgba(0, 0, 0, 0.5)
+	    ),
+		url(https://static.pexels.com/photos/296878/pexels-photo-296878.jpeg);
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    background-size: cover;
+
+	}
+
+	.content{
+		position: fixed;
+	}
+
+	
+	.no-scroll .scroll-content{
+     overflow: hidden;
+}
+
+	.moduleText{
+		background: rgba(255, 255, 255,0.80);
+  		 color: black;
+		 background-size: cover;
+		 -webkit-background-size: cover;
+	     -moz-background-size: cover;
+	    padding-top: 25px;
+	    padding-bottom: 25px;
+
+	}
+
+	.module{
+		
+		 background: rgba(255, 255, 255,1);
+  		 color: black;
+		 background-size: cover;
+		 -webkit-background-size: cover;
+	     -moz-background-size: cover;
+	     padding-right: 20px;
+
+
+		  
+
+	}
+
+	scroll-content {
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	ion-grid {
+		padding: 0;
+		height: 100%;
+	}
+
+	ion-row {
+		flex:1;
+	}
+	ion-col {
+		flex:1;
+	}
+
+	
 };

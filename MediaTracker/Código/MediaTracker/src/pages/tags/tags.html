@@ -22,7 +22,7 @@
 
       <ion-item>
         <ion-label floating>Descrição</ion-label>
-        <ion-textarea style="resize: none;" [class.invalid]="!tagsForm.controls.tagDescricao.valid && (tagsForm.controls.tagDescricao.dirty || !invalidForm)" type="text" formControlName="tagDescricao"></ion-textarea>
+        <ion-textarea [class.invalid]="!tagsForm.controls.tagDescricao.valid && (tagsForm.controls.tagDescricao.dirty || !invalidForm)" type="text" formControlName="tagDescricao"></ion-textarea>
       </ion-item>
 
       <br>
