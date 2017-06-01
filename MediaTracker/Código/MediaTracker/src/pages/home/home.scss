@@ -1,23 +1,20 @@
 page-home{
 	p {
 		font-size: 1.5em;
-		color: black;
+		color: white;
 		margin-left: 10px;
 
 	}
 
 	h1{
 		font-size: 4em;
-		color: black;
+		color: white;
 		margin-left: 10px;
 	}
 
 	ion-label, .select-text {
 		margin-left: 10px;
 	}
-
-
-
 
 
 	.invalid {
@@ -48,11 +45,12 @@ page-home{
 
 	
 	.no-scroll .scroll-content{
-     overflow: hidden;
-}
+     	overflow: hidden;
+	}
 
 	.moduleText{
-		background: rgba(255, 255, 255,0.80);
+		/*background: rgba(255, 255, 255,0.80);*/
+
   		 color: black;
 		 background-size: cover;
 		 -webkit-background-size: cover;
@@ -70,11 +68,8 @@ page-home{
 		 -webkit-background-size: cover;
 	     -moz-background-size: cover;
 	     padding-right: 20px;
-
-
-		  
-
 	}
+
 
 	scroll-content {
 		display: flex;
@@ -88,9 +83,11 @@ page-home{
 	}
 
 	ion-row {
+
 		flex:1;
 	}
 	ion-col {
+
 		flex:1;
 	}
 

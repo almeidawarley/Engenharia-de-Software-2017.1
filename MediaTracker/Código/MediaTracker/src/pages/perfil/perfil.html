@@ -9,32 +9,46 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding *ngIf="isLoaded">
-  <div id="perfil_div" class="center item item-input" no-padding style="text-align: center;">
-    <ion-grid>
-    <ion-row>
-    <ion-col col-6>
-    <div id="perfil_imageDiv">
-      <h5><span>{{perfilApelido}}</span></h5>
-      <ion-thumbnail id="perfil_thumb">
-        <img src="{{perfilImage}}">
-      </ion-thumbnail>
+<ion-content class="has-header" padding *ngIf="isLoaded">
+  <ion-grid >
+  <ion-row></ion-row>
+    <div id="perfil_div" class="item item-input" >
+      <ion-row align-items-end justify-content-start>
+      
+      <ion-col col-12>
+      <br>
+
+        <div id="perfil_imageDiv" class="float" style="text-align: center;float:left;display: inline-block;">
+          <h5><span>{{perfilApelido}}</span></h5>
+          <ion-thumbnail id="perfil_thumb">
+            <img src="{{perfilImage}}">
+          </ion-thumbnail>
+        </div>
+
+        <div style="position: relative;  text-align: bottom; float:left; padding-left: 25px ">
+          
+          <h2 icon-left >
+          {{perfilNome}} 
+          <ion-icon class="iconSize" [name]="perfilSexoIcone"></ion-icon>
+          </h2> 
+  
+
+          <p>{{perfilEmail}}</p>
+          <p>{{perfilData}}</p>
+          <br><br><br><br>
+          <button  id="perfil_sair" ion-button color="danger" clear (click)="logout()">Sair</button>
+          
+       </div>
+      </ion-col>
+      </ion-row>
+
+
+     
+      <ion-row>
+      <!-- AQUI ENTRARIA O RESTANTE DO PERFIL, POSTAGENS, ETC-->
+      </ion-row>
+       
+      
     </div>
-    </ion-col>
-    <ion-col col-6>
-    <br>
-
-    <h4>{{perfilNome}}</h4>
-    <h4>{{perfilEmail}}</h4>
-
-    <br>
-
-    <h4>{{perfilSexo}}</h4>
-    <h4>{{perfilData}}</h4>
-
-    <button id="perfil_sair" center ion-button (click)="logout()">Sair</button>
-    </ion-col>
-    </ion-row>
-    </ion-grid>
-  </div>
+  </ion-grid>
 </ion-content>

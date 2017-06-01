@@ -22,7 +22,8 @@ export class PerfilPage {
   perfilNome: any;
   perfilEmail: any;
   perfilData: any;
-  perfilSexo: any;
+
+  perfilSexoIcone: string;
 
   isLoaded: boolean = false;
 
@@ -47,7 +48,13 @@ export class PerfilPage {
   		self.perfilNome = userData['nome'];
   		self.perfilEmail = userData['email'];
   		self.perfilData = userData['data'];
-  		self.perfilSexo = userData['sexo'];
+
+      let sexo = userData['sexo'];
+      if (sexo === 'Masculino')
+        self.perfilSexoIcone = 'male';
+      else if (sexo === 'Feminino')
+        self.perfilSexoIcone = 'female';
+
   		self.hideLoading();
   		self.isLoaded = true;
   	});
