@@ -23,6 +23,7 @@ export class PerfilPage {
   perfilEmail: any;
   perfilData: any;
 
+  perfilMarked: string[];
   perfilSexoIcone: string;
 
   isLoaded: boolean = false;
@@ -42,12 +43,16 @@ export class PerfilPage {
   	let user = this.afAuth.auth.currentUser;
   	let ref = this.afDb.object('/users/' + user.uid);
   	let self = this;
+    let marked;
   	ref.subscribe(function(userData) {
   		self.perfilImage = userData['image'];
   		self.perfilApelido = userData['apelido'];
   		self.perfilNome = userData['nome'];
   		self.perfilEmail = userData['email'];
   		self.perfilData = userData['data'];
+      marked = userData['marked'];
+      if(marked!=null)
+        self.perfilMarked = marked.toString().split(',');
 
       let sexo = userData['sexo'];
       if (sexo === 'Masculino')
@@ -71,4 +76,9 @@ export class PerfilPage {
   hideLoading() {
     this.loading.dismiss();
   }
+
+  callGeneroPage() {
+    this.events.publish('callGeneroPage');
+  }
+
 }

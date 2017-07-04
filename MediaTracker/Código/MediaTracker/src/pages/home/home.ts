@@ -69,10 +69,11 @@ export class HomePage {
   			});
   	}
   }
-
+  
   callSignUpPage() {
   	this.events.publish('callSignUpPage');
   }
+
 
   showLoading() {
   	this.loading = this.loadingCtrl.create({

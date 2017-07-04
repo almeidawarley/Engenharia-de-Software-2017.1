@@ -15,6 +15,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 export class FilmePage {
 
   filmeForm: FormGroup;
+  commentForm: FormGroup;
 
   showError: boolean = false;
   errorMessage: string;
@@ -40,6 +41,7 @@ export class FilmePage {
 
   listaGeneros: string[];
   listaTags: string[];
+  listaComentarios: string[];
 
   constructor(public navCtrl: NavController, public events: Events, public afAuth: AngularFireAuth,
                public formBuilder: FormBuilder, public loadingCtrl: LoadingController, public afDb: AngularFireDatabase) {
@@ -51,6 +53,12 @@ export class FilmePage {
       filmeGeneros: [''],
       filmeTags: ['']
     });
+
+    this.commentForm = formBuilder.group({
+      commentTexto: ['', Validators.compose([Validators.required])],
+      commentNota: ['', Validators.compose([Validators.required])]
+    });
+
     this.items = this.afDb.list('/filmes/');
     this.generos = this.afDb.list('/generos/');
     this.tags = this.afDb.list('/tags/');
@@ -65,6 +73,18 @@ export class FilmePage {
       this.errorMessage = 'Por favor preencha os campos corretamente';
       return false;
     }
+  }
+
+  validateComment(){
+    if(this.commentForm.valid){
+      this.showError = false;
+      return true;
+    }else{
+      this.showError = true;
+      this.errorMessage = 'Por favor preencha os campos corretamente';
+      return false;
+    }
+
   }
 
   submit() {
@@ -108,6 +128,10 @@ export class FilmePage {
     this.events.publish('callPerfilPage');
   }
 
+  refresh(){
+    this.navCtrl.setRoot(this.navCtrl.getActive().component);
+  }
+
   showLoading() {
     this.loading = this.loadingCtrl.create({
       spinner: 'crescent',
@@ -129,11 +153,14 @@ export class FilmePage {
       this.showCurrentlyItem = true;
       this.listaGeneros = this.currentlyItem.generos.toString().split(',');
       this.listaTags = this.currentlyItem.tags.toString().split(',');
+      if(this.currentlyItem.comentarios != null)
+        this.listaComentarios = this.currentlyItem.comentarios.toString().split(',');
     }    
   }
 
   isSelected(item){
     if(item == this.currentlyItem){
+
       return true;
     }else{
       return false;
@@ -177,5 +204,58 @@ export class FilmePage {
       self.imageEncoded = reader.result;
     }, false);
     reader.readAsDataURL(file);
+  }
+
+  addComment(){
+    if(this.validateComment()){
+      let ref;
+      let self = this;
+      let texto = this.commentForm.controls.commentTexto.value;
+      let nota = this.commentForm.controls.commentNota.value;
+      this.showLoading();
+      let comentarios = this.currentlyItem.comentarios;
+      if(comentarios == null)
+        comentarios = [];
+      comentarios.push(texto);
+      let numeroNotas:number = Number(this.currentlyItem.numeroNotas) + 1;
+      let somaNotas:number = Number(this.currentlyItem.somaNotas) + Number(nota);
+      ref = this.afDb.object('/filmes/' + this.currentlyItem.codigo);
+      ref.set({codigo: this.currentlyItem.codigo, titulo: this.currentlyItem.titulo, sinopse: this.currentlyItem.sinopse, duracao: this.currentlyItem.duracao, ano: this.currentlyItem.ano, 
+        image: this.currentlyItem.image, numeroNotas: numeroNotas, somaNotas: somaNotas, generos: this.currentlyItem.generos, tags: this.currentlyItem.tags, comentarios: comentarios}).then(function(){
+          self.hideLoading();
+        });
+      this.refresh();      
+    }
+  }
+
+  mark(){
+    if(this.currentlyItem != null){
+      this.showLoading();
+      let self = this;
+      let user = this.afAuth.auth.currentUser;
+      let ref = self.afDb.object('/users/' + user.uid);
+      let marked;
+      ref.subscribe(function(userData){
+        marked = userData['marked'];
+      });
+      if(marked == null)
+          marked = [];
+        if(this.check(marked))
+          marked.push('Filme: ' + self.currentlyItem.titulo);
+        ref.update({marked:marked});
+        self.hideLoading();
+    }else{
+      this.showError = true;
+      this.errorMessage = 'Selecione uma mídia para marcar';    
+    }
+  }
+
+  check(marcados){
+    let comentarios = marcados.toString().split(',');
+    for(let c of comentarios){
+      if(this.currentlyItem !=null && c == this.currentlyItem.titulo)
+        return false;
+    }
+    return true;
   }
 }

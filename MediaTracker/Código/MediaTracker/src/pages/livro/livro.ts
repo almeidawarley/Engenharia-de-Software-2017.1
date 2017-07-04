@@ -15,6 +15,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 export class LivroPage {
 
   livroForm: FormGroup;
+  commentForm: FormGroup;
 
   showError: boolean = false;
   errorMessage: string;
@@ -40,6 +41,7 @@ export class LivroPage {
 
   listaGeneros: string[];
   listaTags: string[];
+  listaComentarios: string[];
 
   constructor(public navCtrl: NavController, public events: Events, public afAuth: AngularFireAuth,
                public formBuilder: FormBuilder, public loadingCtrl: LoadingController, public afDb: AngularFireDatabase) {
@@ -51,6 +53,12 @@ export class LivroPage {
       livroGeneros: [''],
       livroTags: ['']
     });
+
+    this.commentForm = formBuilder.group({
+      commentTexto: ['', Validators.compose([Validators.required])],
+      commentNota: ['', Validators.compose([Validators.required])]
+    });
+
     this.items = this.afDb.list('/livros/');
     this.generos = this.afDb.list('/generos/');
     this.tags = this.afDb.list('/tags/');
@@ -129,6 +137,8 @@ export class LivroPage {
       this.showCurrentlyItem = true;
       this.listaGeneros = this.currentlyItem.generos.toString().split(',');
       this.listaTags = this.currentlyItem.tags.toString().split(',');
+      if(this.currentlyItem.comentarios != null)
+        this.listaComentarios = this.currentlyItem.comentarios.toString().split(',');
     }    
   }
 
@@ -177,5 +187,77 @@ export class LivroPage {
       self.imageEncoded = reader.result;
     }, false);
     reader.readAsDataURL(file);
+  }
+
+  addComment(){
+    if(this.validateComment()){
+      let ref;
+      let self = this;
+      let texto = this.commentForm.controls.commentTexto.value;
+      let nota = this.commentForm.controls.commentNota.value;
+      this.showLoading();
+      let comentarios = this.currentlyItem.comentarios;
+      if(comentarios == null)
+        comentarios = [];
+      comentarios.push(texto);
+      let numeroNotas:number = Number(this.currentlyItem.numeroNotas) + 1;
+      let somaNotas:number = Number(this.currentlyItem.somaNotas) + Number(nota);
+      ref = this.afDb.object('/livros/' + this.currentlyItem.codigo);
+      ref.set({codigo: this.currentlyItem.codigo, titulo: this.currentlyItem.titulo, 
+        sinopse: this.currentlyItem.sinopse, 
+        idioma: this.currentlyItem.idioma, isbn: this.currentlyItem.isbn, 
+        image: this.currentlyItem.image, numeroNotas: numeroNotas, 
+        somaNotas: somaNotas, generos: this.currentlyItem.generos, tags: this.currentlyItem.tags, 
+        comentarios: comentarios}).then(function(){
+          self.hideLoading();
+        });
+      this.refresh();
+    }
+  }
+
+  mark(){
+    if(this.currentlyItem != null){
+      this.showLoading();
+      let self = this;
+      let user = this.afAuth.auth.currentUser;
+      let ref = self.afDb.object('/users/' + user.uid);
+      let marked;
+      ref.subscribe(function(userData){
+        marked = userData['marked'];
+      });
+      if(marked == null)
+          marked = [];
+        if(this.check(marked))
+          marked.push('Livro: ' + self.currentlyItem.titulo);
+        ref.update({marked:marked});
+        self.hideLoading();
+    }else{
+      this.showError = true;
+      this.errorMessage = 'Selecione uma mídia para marcar';    
+    }
+  }
+
+  check(marcados){
+    let comentarios = marcados.toString().split(',');
+    for(let c of comentarios){
+      if(this.currentlyItem !=null && c == this.currentlyItem.titulo)
+        return false;
+    }
+    return true;
+  }
+
+  validateComment(){
+    if(this.commentForm.valid){
+      this.showError = false;
+      return true;
+    }else{
+      this.showError = true;
+      this.errorMessage = 'Por favor preencha os campos corretamente';
+      return false;
+    }
+  }
+
+  refresh(){
+    this.navCtrl.setRoot(this.navCtrl.getActive().component);
   }
 }

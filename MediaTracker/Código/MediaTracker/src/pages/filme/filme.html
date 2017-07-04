@@ -91,6 +91,12 @@
     </ion-list>
     </ion-col>
     </ion-row>
+    <div *ngIf="showCurrentlyItem">
+    <ion-row>
+    <ion-col>
+      <button id="mark_button" ion-button block (click)="mark()">Marcar</button>    
+    </ion-col>
+    </ion-row>
     <ion-row>
     <ion-col *ngIf="showCurrentlyItem">
       <div id="filme_imageDiv">
@@ -99,7 +105,7 @@
         </ion-thumbnail>
       </div>
     </ion-col>
-    <ion-col *ngIf="showCurrentlyItem">
+    <ion-col>
     <ion-list>
     <ion-list-header> {{currentlyItem.titulo}} </ion-list-header>
       <p> Sinopse: {{currentlyItem.sinopse}}</p>
@@ -111,7 +117,40 @@
     </ion-list>
     </ion-col>
     </ion-row>
+    <ion-row>
+    <ion-col>
+    <ion-list>
+    <ion-list-header>Comentários</ion-list-header>
+    <ion-item *ngFor="let c of listaComentarios">{{c}}</ion-item>
+    </ion-list>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+    <ion-col>
+
+    <form [formGroup]="commentForm">
+    <ion-item>
+        <ion-label floating>Comentário</ion-label>
+        <ion-textarea [class.invalid]="!commentForm.controls.commentTexto.valid && (commentForm.controls.commentTexto.dirty || !invalidForm)" type="text" formControlName="commentTexto"></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Nota</ion-label>
+        <ion-select [class.invalid]="!commentForm.controls.commentNota.valid && (commentForm.controls.commentNota.dirty || !invalidForm)" multiple="true" type="text" formControlName="commentNota">
+        <ion-option value="1">1</ion-option>
+        <ion-option value="2">2</ion-option>
+        <ion-option value="3">3</ion-option>
+        <ion-option value="4">4</ion-option>
+        <ion-option value="5">5</ion-option>
+        </ion-select>
+      </ion-item>
+    <button id="comment_button" ion-button block (click)="addComment()">Comentar</button>
+    </form>
+    </ion-col>
+    </ion-row>
+    </div>
     </ion-grid>
+
     <br><br><br><br>
     <button id="filme_button" ion-button block (click)="callRegisterPage()">Cadastrar novo filme</button>
     <br>
