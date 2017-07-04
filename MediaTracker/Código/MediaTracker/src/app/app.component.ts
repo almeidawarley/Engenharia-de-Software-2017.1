@@ -34,7 +34,7 @@ export class MyApp {
     this.pages = [
       { title: 'Perfil', icon: 'person', component: PerfilPage },
       { title: 'Tags', icon: 'pricetag', component: TagsPage },
-      { title: 'Gêneros', icon: 'film', component: GeneroPage},
+      { title: 'Gêneros', icon: 'star', component: GeneroPage},
       { title: 'Livros', icon: 'book', component: LivroPage},
       { title: 'Episódios', icon: 'videocam', component: EpisodioPage},
       { title: 'Filmes', icon: 'film', component: FilmePage},
@@ -52,6 +52,12 @@ export class MyApp {
     events.subscribe('callPerfilPage', () => {
       this.nav.setRoot(PerfilPage);
     });
+
+    events.subscribe('callGeneroPage', () => {
+      this.nav.setRoot(GeneroPage);
+    });
+
+    
   }
 
   openPage(page) {

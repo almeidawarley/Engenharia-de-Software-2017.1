@@ -1,5 +1,3 @@
-
-
 <ion-content class="background-image home">
 
   <ion-grid>
@@ -14,7 +12,7 @@
             <header>
             <h1>MediaTracker</h1>
             </header>
-            <p>Trabalho desenvolvido para a disciplina de Engenharia de Software</p>
+            <p id="firstMessage">Trabalho desenvolvido para a disciplina de Engenharia de Software</p>
             <p>UFJF 2017/1</p>
 
           </div>
@@ -28,16 +26,17 @@
         <div id="login_div" class=" module center item item-input" no-padding style="text-align: center;">
 
           <form [formGroup]="loginForm">
-
-            <ion-item>
+            <!--<ion-item >-->
               <ion-label floating>E-mail</ion-label>
-              <ion-input [class.invalid]="!loginForm.controls.loginEmail.valid && (loginForm.controls.loginEmail.dirty || !invalidForm)" type="text" formControlName="loginEmail"></ion-input>
-            </ion-item>
+              <!--<ion-input [class.invalid]="!loginForm.controls.loginEmail.valid && (loginForm.controls.loginEmail.dirty || !invalidForm)" type="text" formControlName="loginEmail" ><input class="loginEmailInput"></ion-input>-->
+              <input [class.invalid]="!loginForm.controls.loginEmail.valid && (loginForm.controls.loginEmail.dirty || !invalidForm)" type="text" formControlName="loginEmail" class="loginEmailInput">
+            <!--</ion-item>-->
 
-            <ion-item>
+            <!--<ion-item >-->
               <ion-label floating>Senha</ion-label>
-              <ion-input [class.invalid]="!loginForm.controls.loginPassword.valid && (loginForm.controls.loginPassword.dirty || !invalidForm)" type="password" formControlName="loginPassword"></ion-input>
-            </ion-item>
+              <!--<ion-input [class.invalid]="!loginForm.controls.loginPassword.valid && (loginForm.controls.loginPassword.dirty || !invalidForm)" type="password" formControlName="loginPassword" ></ion-input>-->
+              <input [class.invalid]="!loginForm.controls.loginPassword.valid && (loginForm.controls.loginPassword.dirty || !invalidForm)" type="password" formControlName="loginPassword" class="loginPasswordInput">
+            <!--</ion-item>-->
 
             <br>
 
@@ -49,7 +48,7 @@
             <br><br>
           </form>
 
-          <p *ngIf="showError" style="color: #ea6153;" >{{errorMessage}}</p>
+          <p *ngIf="showError" id = "errorMessage" style="color: #ea6153;" >{{errorMessage}}</p>
 
           </div>
 
