@@ -203,12 +203,7 @@ export class LivroPage {
       let numeroNotas:number = Number(this.currentlyItem.numeroNotas) + 1;
       let somaNotas:number = Number(this.currentlyItem.somaNotas) + Number(nota);
       ref = this.afDb.object('/livros/' + this.currentlyItem.codigo);
-      ref.set({codigo: this.currentlyItem.codigo, titulo: this.currentlyItem.titulo, 
-        sinopse: this.currentlyItem.sinopse, 
-        idioma: this.currentlyItem.idioma, isbn: this.currentlyItem.isbn, 
-        image: this.currentlyItem.image, numeroNotas: numeroNotas, 
-        somaNotas: somaNotas, generos: this.currentlyItem.generos, tags: this.currentlyItem.tags, 
-        comentarios: comentarios}).then(function(){
+      ref.update({numeroNotas: numeroNotas, somaNotas: somaNotas, comentarios:comentarios}).then(function(){
           self.hideLoading();
         });
       this.refresh();
