@@ -1,0 +1,57 @@
+page-feed{
+
+	.hidden {
+		display: none;
+	}
+
+	.half-image {
+	  
+	}
+	.imgContainer {
+	  overflow: hidden;
+	  width: 100%;
+	  height: 300px;
+	}
+	.imgContainer img {
+	 
+	}
+	
+	.big {
+	    font-size: 20px;
+	}
+
+	.small {
+	    font-size: 10px;
+	}
+
+
+	scroll-content {
+		display: flex;
+		flex-direction: column;
+
+
+	}
+
+	ion-grid {
+		padding: 0;
+		height: 100%;
+	}
+
+
+	ion-row {
+		flex:0.1;
+		/*border-bottom: 1px solid black;*/
+	}
+	.iconSize{
+		font-size:17px;
+	}
+
+
+	.col{
+		/*background: gray;
+		border: think solid black;/*/
+	}
+
+
+
+};

@@ -8,12 +8,13 @@ import {SplashScreen} from "@ionic-native/splash-screen";
 import {HomePage} from "../pages/home/home";
 import {PerfilPage} from "../pages/perfil/perfil";
 import {SignUpPage} from "../pages/signup/signup";
+
 import {GeneroPage} from "../pages/genero/genero";
 import {TagsPage} from "../pages/tags/tags";
 import {LivroPage} from "../pages/livro/livro";
 import {EpisodioPage} from "../pages/episodio/episodio";
 import {FilmePage} from "../pages/filme/filme";
-import {SugestoesPage} from "../pages/sugestoes/sugestoes";
+import {FeedPage} from "../pages/feed/feed";
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -33,13 +34,14 @@ const firebaseConfig = {
     MyApp,
     HomePage,
     SignUpPage,
+
     PerfilPage,
     TagsPage,
     GeneroPage,
     LivroPage,
     EpisodioPage,
     FilmePage,
-    SugestoesPage
+    FeedPage
   ],
   imports: [
     BrowserModule,
@@ -53,13 +55,14 @@ const firebaseConfig = {
     MyApp,
     HomePage,
     SignUpPage,
+
     PerfilPage,
     TagsPage, 
     GeneroPage,
     LivroPage, 
     EpisodioPage,
     FilmePage,
-    SugestoesPage
+    FeedPage
   ],
   providers: [
     StatusBar,

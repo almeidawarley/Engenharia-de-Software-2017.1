@@ -5,12 +5,13 @@ import {SplashScreen} from "@ionic-native/splash-screen";
 import {HomePage} from "../pages/home/home";
 import {PerfilPage} from "../pages/perfil/perfil";
 import {SignUpPage} from "../pages/signup/signup";
+
 import {GeneroPage} from "../pages/genero/genero";
 import {TagsPage} from "../pages/tags/tags";
 import {LivroPage} from "../pages/livro/livro";
 import {EpisodioPage} from "../pages/episodio/episodio";
 import {FilmePage} from "../pages/filme/filme";
-import {SugestoesPage} from "../pages/sugestoes/sugestoes";
+import {FeedPage} from "../pages/feed/feed";
 import {Events} from 'ionic-angular';
 
 @Component({
@@ -33,12 +34,12 @@ export class MyApp {
 
     this.pages = [
       { title: 'Perfil', icon: 'person', component: PerfilPage },
+      { title: 'Feed', icon: 'ionic', component: FeedPage },
       { title: 'Tags', icon: 'pricetag', component: TagsPage },
-      { title: 'Gêneros', icon: 'star', component: GeneroPage},
+      { title: 'Generos', icon: 'film', component: GeneroPage},
       { title: 'Livros', icon: 'book', component: LivroPage},
       { title: 'Episódios', icon: 'videocam', component: EpisodioPage},
-      { title: 'Filmes', icon: 'film', component: FilmePage},
-      { title: 'Sugestões', icon: 'create', component: SugestoesPage}
+      { title: 'Filmes', icon: 'film', component: FilmePage}
     ];
 
     events.subscribe('callHomePage', () => {
@@ -52,12 +53,6 @@ export class MyApp {
     events.subscribe('callPerfilPage', () => {
       this.nav.setRoot(PerfilPage);
     });
-
-    events.subscribe('callGeneroPage', () => {
-      this.nav.setRoot(GeneroPage);
-    });
-
-    
   }
 
   openPage(page) {
