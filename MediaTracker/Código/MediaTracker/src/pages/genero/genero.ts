@@ -32,7 +32,12 @@ export class GeneroPage {
       generoNome: ['', Validators.compose([Validators.minLength(3), Validators.required])],
       generoDescricao: ['', Validators.compose([Validators.minLength(6), Validators.required])]
     });
-    this.items = this.afDb.list('/generos/');
+    this.items = this.afDb.list('/generos/', {
+      query: {
+        orderByChild: 'accepted',
+        equalTo: true
+      }
+    });
   }
 
   validate() {
@@ -55,7 +60,7 @@ export class GeneroPage {
       let codigo = nome.substring(0, 3).toUpperCase();
       let self = this;
       let ref = self.afDb.object('/generos/' + codigo);
-      ref.set({codigo: codigo, nome: nome, descricao: descricao})
+      ref.set({codigo: codigo, nome: nome, descricao: descricao, accepted: false})
       .then(function() {
         self.hideLoading();
         self.showSubmited = true;

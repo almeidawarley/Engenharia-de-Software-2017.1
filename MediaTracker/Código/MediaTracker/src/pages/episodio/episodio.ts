@@ -51,7 +51,12 @@ export class EpisodioPage {
       episodioGeneros: [''],
       episodioTags: ['']
     });
-    this.items = this.afDb.list('/episodios/');
+    this.items = this.afDb.list('/episodios/', {
+      query: {
+        orderByChild: 'accepted',
+        equalTo: true
+      }
+    });
     this.generos = this.afDb.list('/generos/');
     this.tags = this.afDb.list('/tags/');
   }
@@ -85,7 +90,7 @@ export class EpisodioPage {
       let self = this;
       let ref = self.afDb.object('/episodios/' + codigo);
       ref.set({codigo: codigo, titulo: titulo, sinopse: sinopse, duracao: duracao, data: data, 
-        image: image, numeroNotas: numeroNotas, somaNotas: somaNotas, generos: generos, tags: tags})
+        image: image, numeroNotas: numeroNotas, somaNotas: somaNotas, generos: generos, tags: tags, accepted: false})
       .then(function() {
         self.hideLoading();
         self.showSubmited = true;

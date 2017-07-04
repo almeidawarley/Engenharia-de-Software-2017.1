@@ -32,7 +32,12 @@ export class TagsPage {
       tagNome: ['', Validators.compose([Validators.minLength(3), Validators.required])],
       tagDescricao: ['', Validators.compose([Validators.minLength(6), Validators.required])],
     });
-    this.items = afDb.list('/tags');
+    this.items = afDb.list('/tags', {
+      query: {
+        orderByChild: 'accepted',
+        equalTo: true
+      }
+    });
   }
 
   validate() {
@@ -58,7 +63,7 @@ export class TagsPage {
       let codigo = nome.substring(0, 3).toUpperCase() + descricao.substring(descricao.length/3, descricao.length/2).toUpperCase().substring(0, 3).replace(' ', '6');
 
       let ref = this.afDb.object('/tags/' + codigo);
-      ref.set({codigo: codigo, nome: nome, descricao: descricao})
+      ref.set({codigo: codigo, nome: nome, descricao: descricao, accepted: false})
       .then(function() {
         self.showSubmited = true;
         self.hideLoading();
@@ -97,7 +102,7 @@ export class TagsPage {
     }else{
       this.currentlyItem = item;
       this.showCurrentlyItem = true;
-    }    
+    }
   }
 
   isSelected(item){

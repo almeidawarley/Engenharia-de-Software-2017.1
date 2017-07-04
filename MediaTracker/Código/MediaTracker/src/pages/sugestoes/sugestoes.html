@@ -1,0 +1,126 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" class="menu-icon"></ion-icon>
+    </button>
+    <ion-title>
+      Avaliação de sugestões
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div id="types_div" class="center no-overlap" style="text-align: center;">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-list>
+            <ion-list-header>
+              <h1>Tipos de mídias</h1>
+            </ion-list-header>
+            <button ion-item (click)="selectType('Tags')">
+              <h2 *ngIf="isTypeSelected('Tags')" class="highlight">Tags</h2>
+              <h2 *ngIf="!isTypeSelected('Tags')">Tags</h2>
+            </button>
+            <button ion-item (click)="selectType('Gêneros')">
+              <h2 *ngIf="isTypeSelected('Gêneros')" class="highlight">Gêneros</h2>
+              <h2 *ngIf="!isTypeSelected('Gêneros')">Gêneros</h2>
+            </button>
+            <button ion-item (click)="selectType('Livros')">
+              <h2 *ngIf="isTypeSelected('Livros')" class="highlight">Livros</h2>
+              <h2 *ngIf="!isTypeSelected('Livros')">Livros</h2>
+            </button>
+            <button ion-item (click)="selectType('Episódios')">
+              <h2 *ngIf="isTypeSelected('Episódios')" class="highlight">Episódios</h2>
+              <h2 *ngIf="!isTypeSelected('Episódios')">Episódios</h2>
+            </button>
+            <button ion-item (click)="selectType('Filmes')">
+              <h2 *ngIf="isTypeSelected('Filmes')" class="highlight">Filmes</h2>
+              <h2 *ngIf="!isTypeSelected('Filmes')">Filmes</h2>
+            </button>
+          </ion-list>
+        </ion-col>
+        <ion-col *ngIf="showCurrentType">
+          <h1> Sugestões de {{currentType}} </h1>
+          <ion-list>
+            <button ion-item *ngFor="let item of items | async" (click)="selectItem(item)">
+              <h2 *ngIf="isItemSelected(item) && (isTypeSelected('Tags') || isTypeSelected('Gêneros'))" class="highlight">{{item.nome}}</h2>
+              <h2 *ngIf="!isItemSelected(item) && (isTypeSelected('Tags') || isTypeSelected('Gêneros'))">{{item.nome}}</h2>
+              <h2 *ngIf="isItemSelected(item) && (!isTypeSelected('Tags') || !isTypeSelected('Gêneros'))" class="highlight">{{item.titulo}}</h2>
+              <h2 *ngIf="!isItemSelected(item) && (!isTypeSelected('Tags') || !isTypeSelected('Gêneros'))">{{item.titulo}}</h2>
+            </button>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="showCurrentItem && (isTypeSelected('Tags') || isTypeSelected('Gêneros'))">
+        <ion-col>
+          <h1> {{currentItem.nome}} </h1>
+          <p class = "text">{{currentItem.descricao}}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="showCurrentItem && isTypeSelected('Livros')">
+        <ion-col>
+          <div id="livro_imageDiv">
+            <ion-thumbnail id="livro_thumb">
+              <img src="{{currentItem.image}}">
+            </ion-thumbnail>
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-list>
+            <ion-list-header> {{currentItem.titulo}} </ion-list-header>
+            <p> Sinopse: {{currentItem.sinopse}}</p>
+            <ion-item> Idioma: {{currentItem.idioma}}</ion-item>
+            <ion-item> ISBN: {{currentItem.isbn}} </ion-item>
+            <ion-item> Gênero:  <span *ngFor="let g of listaGeneros"> {{lookForGenero(g)}}</span></ion-item>
+            <ion-item> Tags:  <span *ngFor="let t of listaTags"> {{lookForTag(t)}} </span></ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="showCurrentItem && isTypeSelected('Episódios')">
+        <ion-col>
+          <div id="episodio_imageDiv">
+            <ion-thumbnail id="episodio_thumb">
+              <img src="{{currentItem.image}}">
+            </ion-thumbnail>
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-list>
+            <ion-list-header> {{currentItem.titulo}} </ion-list-header>
+            <p> Sinopse: {{currentItem.sinopse}}</p>
+            <ion-item> Duração: {{currentItem.duracao}} minutos</ion-item>
+            <ion-item> Data de exibição: {{currentItem.data}} </ion-item>
+            <ion-item> Gênero:  <span *ngFor="let g of listaGeneros"> {{lookForGenero(g)}}</span></ion-item>
+            <ion-item> Tags:  <span *ngFor="let t of listaTags"> {{lookForTag(t)}} </span></ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngIf="showCurrentItem && isTypeSelected('Filmes')">
+        <ion-col>
+          <div id="filme_imageDiv">
+            <ion-thumbnail id="filme_thumb">
+              <img src="{{currentItem.image}}">
+            </ion-thumbnail>
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-list>
+            <ion-list-header> {{currentItem.titulo}} </ion-list-header>
+            <p> Sinopse: {{currentItem.sinopse}}</p>
+            <ion-item> Duração: {{currentItem.duracao}} minutos</ion-item>
+            <ion-item> Ano de exibição: {{currentItem.ano}} </ion-item>
+            <ion-item> Gênero:  <span *ngFor="let g of listaGeneros"> {{lookForGenero(g)}}</span></ion-item>
+            <ion-item> Tags:  <span *ngFor="let t of listaTags"> {{lookForTag(t)}} </span></ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <ion-col *ngIf="showCurrentItem">
+        <button id="accept_button" ion-button (click)="acceptCurrentItem()">Aceitar</button>
+        <button id="reject_button" ion-button (click)="rejectCurrentItem()">Rejeitar</button>
+      </ion-col>
+    </ion-grid>
+  </div>
+
+</ion-content>

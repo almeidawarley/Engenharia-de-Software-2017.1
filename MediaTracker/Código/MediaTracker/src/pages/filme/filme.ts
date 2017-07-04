@@ -51,7 +51,12 @@ export class FilmePage {
       filmeGeneros: [''],
       filmeTags: ['']
     });
-    this.items = this.afDb.list('/filmes/');
+    this.items = this.afDb.list('/filmes/', {
+      query: {
+        orderByChild: 'accepted',
+        equalTo: true
+      }
+    });
     this.generos = this.afDb.list('/generos/');
     this.tags = this.afDb.list('/tags/');
   }
@@ -85,7 +90,7 @@ export class FilmePage {
       let self = this;
       let ref = self.afDb.object('/filmes/' + codigo);
       ref.set({codigo: codigo, titulo: titulo, sinopse: sinopse, duracao: duracao, ano: ano, 
-        image: image, numeroNotas: numeroNotas, somaNotas: somaNotas, generos: generos, tags: tags})
+        image: image, numeroNotas: numeroNotas, somaNotas: somaNotas, generos: generos, tags: tags, accepted: false})
       .then(function() {
         self.hideLoading();
         self.showSubmited = true;

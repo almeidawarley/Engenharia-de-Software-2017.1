@@ -51,7 +51,12 @@ export class LivroPage {
       livroGeneros: [''],
       livroTags: ['']
     });
-    this.items = this.afDb.list('/livros/');
+    this.items = this.afDb.list('/livros/', {
+      query: {
+        orderByChild: 'accepted',
+        equalTo: true
+      }
+    });
     this.generos = this.afDb.list('/generos/');
     this.tags = this.afDb.list('/tags/');
   }
@@ -85,7 +90,7 @@ export class LivroPage {
       let self = this;
       let ref = self.afDb.object('/livros/' + codigo);
       ref.set({codigo: codigo, titulo: titulo, sinopse: sinopse, idioma: idioma, isbn: isbn, 
-        image: image, numeroNotas: numeroNotas, somaNotas: somaNotas, generos: generos, tags: tags})
+        image: image, numeroNotas: numeroNotas, somaNotas: somaNotas, generos: generos, tags: tags, accepted: false})
       .then(function() {
         self.hideLoading();
         self.showSubmited = true;

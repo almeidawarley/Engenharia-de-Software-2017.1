@@ -13,6 +13,7 @@ import {TagsPage} from "../pages/tags/tags";
 import {LivroPage} from "../pages/livro/livro";
 import {EpisodioPage} from "../pages/episodio/episodio";
 import {FilmePage} from "../pages/filme/filme";
+import {SugestoesPage} from "../pages/sugestoes/sugestoes";
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -37,7 +38,8 @@ const firebaseConfig = {
     GeneroPage,
     LivroPage,
     EpisodioPage,
-    FilmePage
+    FilmePage,
+    SugestoesPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +58,8 @@ const firebaseConfig = {
     GeneroPage,
     LivroPage, 
     EpisodioPage,
-    FilmePage
+    FilmePage,
+    SugestoesPage
   ],
   providers: [
     StatusBar,
